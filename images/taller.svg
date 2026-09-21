@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="tallerTitle">
+  <title id="tallerTitle">Mesa de trabajo del taller Nido de Ideas</title>
+  <rect width="640" height="360" fill="#f7f3ea"/>
+  <rect x="40" y="210" width="560" height="18" rx="4" fill="#c4a574"/>
+  <rect x="70" y="228" width="20" height="90" fill="#a88754"/>
+  <rect x="550" y="228" width="20" height="90" fill="#a88754"/>
+  <rect x="90" y="150" width="140" height="60" rx="6" fill="#efe6d4" stroke="#3d6b4f" stroke-width="3"/>
+  <circle cx="320" cy="175" r="42" fill="#e8f3e8" stroke="#3d6b4f" stroke-width="3"/>
+  <circle cx="320" cy="175" r="12" fill="#f4c430"/>
+  <rect x="430" y="140" width="90" height="70" rx="8" fill="#d9ead3"/>
+  <rect x="448" y="156" width="54" height="8" fill="#3d6b4f"/>
+  <rect x="448" y="172" width="40" height="8" fill="#7a9a84"/>
+  <circle cx="140" cy="120" r="18" fill="#f4c430"/>
+  <circle cx="190" cy="108" r="12" fill="#3d6b4f"/>
+  <text x="40" y="48" font-family="Georgia, serif" font-size="22" fill="#2c3a32">El taller</text>
+</svg>

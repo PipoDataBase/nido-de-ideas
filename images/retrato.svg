@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-labelledby="retratoTitle">
+  <title id="retratoTitle">Retrato ilustrado de la titular del taller</title>
+  <rect width="480" height="360" fill="#eef6ef"/>
+  <circle cx="240" cy="148" r="58" fill="#f1d7b8"/>
+  <path d="M182 148c8-70 116-70 124 0 4 38-18 52-62 52s-66-14-62-52z" fill="#3d6b4f"/>
+  <rect x="170" y="210" width="140" height="110" rx="70" fill="#7a9a84"/>
+  <text x="40" y="40" font-family="Georgia, serif" font-size="20" fill="#2c3a32">Sobre mí</text>
+</svg>

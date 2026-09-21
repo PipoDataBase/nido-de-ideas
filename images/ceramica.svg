@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-labelledby="ceramicaTitle">
+  <title id="ceramicaTitle">Pieza de cerámica hecha a mano</title>
+  <rect width="480" height="360" fill="#f7f3ea"/>
+  <ellipse cx="240" cy="280" rx="90" ry="18" fill="#e2d4be"/>
+  <path d="M170 250c0-80 40-140 70-140s70 60 70 140c0 20-140 20-140 0z" fill="#d9b48a" stroke="#8a5a32" stroke-width="4"/>
+  <ellipse cx="240" cy="110" rx="36" ry="12" fill="#efe6d4" stroke="#8a5a32" stroke-width="4"/>
+  <text x="32" y="42" font-family="Georgia, serif" font-size="20" fill="#2c3a32">Proyecto: cerámica</text>
+</svg>
