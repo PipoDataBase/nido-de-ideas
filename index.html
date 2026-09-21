@@ -4,96 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Inicio | Nido de Ideas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body>
-    <header>
-      <p>
-        <a href="index.html">
-          <img src="images/logo.svg" alt="Logotipo de Nido de Ideas, taller creativo">
+  <body class="pagina">
+    <header class="encabezado">
+      <div class="encabezado__contenido">
+        <a class="marca" href="index.html">
+          <img class="logo" src="images/logo.svg" alt="Logotipo de Nido de Ideas, taller creativo">
         </a>
-      </p>
-      <p>Nido de Ideas</p>
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="pages/sobre-mi.html">Sobre mÌ</a></li>
-          <li><a href="pages/proyectos.html">Proyectos</a></li>
-          <li><a href="pages/faq.html">FAQ</a></li>
-          <li><a href="pages/contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+        <nav class="navegacion">
+          <ul class="nav-lista">
+            <li><a class="nav-enlace nav-enlace--actual" href="index.html">Inicio</a></li>
+            <li><a class="nav-enlace" href="pages/sobre-mi.html">Sobre m√≠</a></li>
+            <li><a class="nav-enlace" href="pages/proyectos.html">Proyectos</a></li>
+            <li><a class="nav-enlace" href="pages/servicios.html">Servicios</a></li>
+            <li><a class="nav-enlace" href="pages/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-
-    <main>
-      <section>
-        <h1>Un taller para crear con las manos y las ideas</h1>
-        <p>
-          Nido de Ideas es un espacio de cer·mica, ilustraciÛn y talleres
-          presenciales. Ac· se aprende despacio, se prueba sin miedo y se
+    <main class="principal">
+      <section class="seccion seccion--destacada">
+        <h1 class="titulo">Un taller para crear con las manos y las ideas</h1>
+        <p class="texto">
+          Nido de Ideas es un espacio de cer√°mica, ilustraci√≥n y talleres
+          presenciales. Ac√° se aprende despacio, se prueba sin miedo y se
           lleva a casa una pieza hecha por vos.
         </p>
       </section>
-
-      <section>
-        <h2>InformaciÛn general</h2>
-        <p>
-          El taller est· pensado para principiantes y para quienes ya vienen
+      <section class="seccion">
+        <h2 class="subtitulo">Informaci√≥n general</h2>
+        <p class="texto">
+          El taller est√° pensado para principiantes y para quienes ya vienen
           trabajando un oficio. Las clases son en grupos chicos, con materiales
           incluidos y seguimiento personalizado.
         </p>
-        <p>
-          El objetivo de esta p·gina es presentar el espacio, mostrar proyectos
+        <p class="texto">
+          El objetivo de esta p√°gina es presentar el espacio, mostrar proyectos
           recientes y facilitar el contacto para reservas o consultas.
         </p>
-        <figure>
-          <img src="images/taller.svg" alt="Mesa de trabajo del taller con piezas, papeles y herramientas">
-          <figcaption>El rincÛn de trabajo de Nido de Ideas, listo para una clase.</figcaption>
+        <figure class="figura">
+          <img class="figura__imagen" src="images/taller.svg" alt="Mesa de trabajo del taller con piezas, papeles y herramientas">
+          <figcaption class="figura__leyenda">El rinc√≥n de trabajo de Nido de Ideas, listo para una clase.</figcaption>
         </figure>
       </section>
-
-      <section>
-        <h2>QuÈ vas a encontrar en el taller</h2>
-        <ul>
-          <li>Clases de cer·mica para empezar desde cero.</li>
-          <li>Encuentros de ilustraciÛn bot·nica y dibujo observado.</li>
-          <li>Talleres de un dÌa para regalar o para probar un oficio.</li>
-          <li>Encargos de piezas ˙nicas para el hogar.</li>
+      <section class="seccion">
+        <h2 class="subtitulo">Qu√© vas a encontrar en el taller</h2>
+        <ul class="lista">
+          <li class="lista__item">Clases de cer√°mica para empezar desde cero.</li>
+          <li class="lista__item">Encuentros de ilustraci√≥n bot√°nica y dibujo observado.</li>
+          <li class="lista__item">Talleres de un d√≠a para regalar o para probar un oficio.</li>
+          <li class="lista__item">Encargos de piezas √∫nicas para el hogar.</li>
         </ul>
       </section>
-
-      <section>
-        <h2>Propuestas destacadas</h2>
-        <article>
-          <h3>Cer·mica lenta</h3>
-          <p>
-            Modelado a mano, esmaltes y una pieza para llevar. Ideal si nunca
-            tocaste el barro.
-          </p>
-        </article>
-        <article>
-          <h3>IlustraciÛn de planta</h3>
-          <p>
-            Observamos una planta real y armamos una l·mina. No hace falta
-            saber dibujar.
-          </p>
-        </article>
-        <article>
-          <h3>Taller abierto</h3>
-          <p>
-            Un s·bado al mes el espacio se abre para quien quiera continuar un
-            proyecto propio.
-          </p>
-        </article>
+      <section class="seccion">
+        <h2 class="subtitulo">Propuestas destacadas</h2>
+        <div class="grupo-tarjetas">
+          <article class="tarjeta">
+            <h3 class="titulo-tercero">Cer√°mica lenta</h3>
+            <p class="texto">Modelado a mano, esmaltes y una pieza para llevar. Ideal si nunca tocaste el barro.</p>
+          </article>
+          <article class="tarjeta">
+            <h3 class="titulo-tercero">Ilustraci√≥n de planta</h3>
+            <p class="texto">Observamos una planta real y armamos una l√°mina. No hace falta saber dibujar.</p>
+          </article>
+          <article class="tarjeta">
+            <h3 class="titulo-tercero">Taller abierto</h3>
+            <p class="texto">Un s√°bado al mes el espacio se abre para quien quiera continuar un proyecto propio.</p>
+          </article>
+        </div>
       </section>
     </main>
-
-    <footer>
-      <p>© 2026 Nido de Ideas. Todos los derechos reservados.</p>
-      <p>Redes sociales</p>
-      <ul>
-        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-        <li><a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+    <footer class="pie">
+      <p class="pie__texto">¬© 2026 Nido de Ideas. Todos los derechos reservados.</p>
+      <p class="pie__texto">Redes sociales</p>
+      <ul class="pie-lista">
+        <li><a class="pie-enlace" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a class="pie-enlace" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        <li><a class="pie-enlace" href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
       </ul>
     </footer>
   </body>

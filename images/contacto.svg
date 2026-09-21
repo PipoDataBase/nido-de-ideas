@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-labelledby="contactoTitle">
-  <title id="contactoTitle">Sobre y lápiz para escribir un mensaje</title>
+  <title id="contactoTitle">Sobre y lapiz para escribir un mensaje</title>
   <rect width="480" height="360" fill="#f7f3ea"/>
   <rect x="90" y="90" width="300" height="180" rx="12" fill="#ffffff" stroke="#3d6b4f" stroke-width="5"/>
   <path d="M90 110 L240 210 L390 110" fill="none" stroke="#3d6b4f" stroke-width="5"/>

@@ -1,0 +1,306 @@
+/* =========================================
+   Paleta de colores
+   Primario:   #3d6b4f  (verde del taller)
+   Secundario: #2c3a32  (texto y bloques oscuros)
+   Acento:     #d4a017  (dorado)
+   Fondo:      #f4efe4  (crema)
+   ========================================= */
+
+.pagina {
+  --color-primario: #3d6b4f;
+  --color-secundario: #2c3a32;
+  --color-acento: #d4a017;
+  --color-fondo: #f4efe4;
+  --color-superficie: #fffdf8;
+  --color-texto: #2c3a32;
+  --color-texto-suave: #5c6e63;
+  --color-claro: #f7f3ea;
+  --fuente-titulos: "Cormorant Garamond", serif;
+  --fuente-cuerpo: "Source Sans 3", sans-serif;
+}
+
+/* =========================================
+   Base de la pùgina
+   ========================================= */
+
+.pagina,
+.pagina * {
+  box-sizing: border-box;
+}
+
+.pagina {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--color-texto);
+  font-family: var(--fuente-cuerpo);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: var(--color-fondo);
+  background-image: radial-gradient(#e6ddcc 1px, #f4efe4 1px);
+  background-size: 22px 22px;
+}
+
+/* =========================================
+   Tipografùa
+   ========================================= */
+
+.titulo {
+  margin: 0 0 0.6em;
+  color: var(--color-secundario);
+  font-family: var(--fuente-titulos);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.subtitulo {
+  margin: 0 0 0.7em;
+  color: var(--color-primario);
+  font-family: var(--fuente-titulos);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.titulo-tercero {
+  margin: 0 0 0.5em;
+  color: var(--color-secundario);
+  font-family: var(--fuente-titulos);
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+
+.texto {
+  margin: 0 0 1em;
+  color: var(--color-texto-suave);
+  font-family: var(--fuente-cuerpo);
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+.texto--claro {
+  color: var(--color-claro);
+}
+
+/* =========================================
+   Encabezado y navegaciùn
+   ========================================= */
+
+.encabezado {
+  background-color: var(--color-primario);
+  color: var(--color-claro);
+  padding: 1rem 8%;
+}
+
+.encabezado__contenido {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+}
+
+.logo {
+  display: block;
+  width: 180px;
+  height: auto;
+  background-color: var(--color-claro);
+  border-radius: 8px;
+  padding: 0.35rem 0.6rem;
+}
+
+.navegacion {
+  flex: 1 1 auto;
+}
+
+.nav-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.nav-enlace {
+  color: var(--color-claro);
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.35rem 0.15rem;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-enlace:hover {
+  color: var(--color-acento);
+}
+
+.nav-enlace--actual {
+  color: var(--color-acento);
+  border-bottom-color: var(--color-acento);
+}
+
+/* =========================================
+   Contenido principal
+   ========================================= */
+
+.principal {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 8% 3.5rem;
+}
+
+.seccion {
+  margin-bottom: 2.4rem;
+  padding: 1.6rem 1.5rem;
+  background-color: var(--color-superficie);
+  border: 1px solid #e2d8c4;
+  border-top: 6px solid var(--color-primario);
+}
+
+.seccion--destacada {
+  background-color: var(--color-primario);
+  border-top-color: var(--color-acento);
+}
+
+.seccion--destacada .titulo,
+.seccion--destacada .texto {
+  color: var(--color-claro);
+}
+
+.lista {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--color-texto-suave);
+  font-family: var(--fuente-cuerpo);
+}
+
+.lista__item {
+  margin-bottom: 0.45rem;
+}
+
+.grupo-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tarjeta {
+  flex: 1 1 240px;
+  padding: 1.1rem 1rem;
+  background-color: var(--color-fondo);
+  border-left: 4px solid var(--color-acento);
+}
+
+/* =========================================
+   Imùgenes
+   ========================================= */
+
+.figura {
+  margin: 1.2rem 0 0;
+}
+
+.figura__imagen {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  background-color: var(--color-fondo);
+  border: 1px solid #e2d8c4;
+}
+
+.figura__leyenda {
+  margin-top: 0.5rem;
+  color: var(--color-texto-suave);
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+/* =========================================
+   Formulario de contacto
+   ========================================= */
+
+.formulario {
+  margin-top: 1rem;
+}
+
+.campo {
+  margin: 0 0 1rem;
+}
+
+.etiqueta {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--color-secundario);
+  font-weight: 600;
+}
+
+.entrada {
+  width: 100%;
+  max-width: 480px;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid #cfc3ad;
+  background-color: var(--color-superficie);
+  color: var(--color-texto);
+  font-family: var(--fuente-cuerpo);
+  font-size: 1rem;
+}
+
+.boton {
+  padding: 0.7rem 1.3rem;
+  border: 0;
+  background-color: var(--color-acento);
+  color: var(--color-secundario);
+  font-family: var(--fuente-cuerpo);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.boton:hover {
+  background-color: #b68b12;
+}
+
+/* =========================================
+   Pie de pùgina
+   ========================================= */
+
+.pie {
+  background-color: var(--color-secundario);
+  color: var(--color-claro);
+  padding: 1.6rem 8%;
+}
+
+.pie__texto {
+  margin: 0 0 0.6rem;
+  color: var(--color-claro);
+  font-size: 0.95rem;
+}
+
+.pie-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1.2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pie-enlace {
+  color: var(--color-acento);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.pie-enlace:hover {
+  color: var(--color-claro);
+}
