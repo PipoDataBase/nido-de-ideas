@@ -1,9 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* =========================================
    Paleta de colores
-   Primario:   #3d6b4f  (verde del taller)
-   Secundario: #2c3a32  (texto y bloques oscuros)
-   Acento:     #d4a017  (dorado)
-   Fondo:      #f4efe4  (crema)
+   Primario:   #3d6b4f
+   Secundario: #2c3a32
+   Acento:     #d4a017
+   Fondo:      #f4efe4
    ========================================= */
 
 .pagina {
@@ -20,16 +26,10 @@
 }
 
 /* =========================================
-   Base de la pùgina
+   Base
    ========================================= */
 
-.pagina,
-.pagina * {
-  box-sizing: border-box;
-}
-
 .pagina {
-  margin: 0;
   min-height: 100vh;
   color: var(--color-texto);
   font-family: var(--fuente-cuerpo);
@@ -42,11 +42,10 @@
 }
 
 /* =========================================
-   Tipografùa
+   Tipografia
    ========================================= */
 
 .titulo {
-  margin: 0 0 0.6em;
   color: var(--color-secundario);
   font-family: var(--fuente-titulos);
   font-size: 3rem;
@@ -55,7 +54,6 @@
 }
 
 .subtitulo {
-  margin: 0 0 0.7em;
   color: var(--color-primario);
   font-family: var(--fuente-titulos);
   font-size: 2rem;
@@ -64,7 +62,6 @@
 }
 
 .titulo-tercero {
-  margin: 0 0 0.5em;
   color: var(--color-secundario);
   font-family: var(--fuente-titulos);
   font-size: 1.45rem;
@@ -72,7 +69,6 @@
 }
 
 .texto {
-  margin: 0 0 1em;
   color: var(--color-texto-suave);
   font-family: var(--fuente-cuerpo);
   font-size: 1.05rem;
@@ -84,51 +80,45 @@
 }
 
 /* =========================================
-   Encabezado y navegaciùn
+   Navbar con Flexbox
    ========================================= */
 
 .encabezado {
   background-color: var(--color-primario);
   color: var(--color-claro);
-  padding: 1rem 8%;
+  padding: 20px 8%;
 }
 
-.encabezado__contenido {
+.navegacion {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .marca {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
   text-decoration: none;
 }
 
 .logo {
   display: block;
-  width: 180px;
+  width: 160px;
   height: auto;
   background-color: var(--color-claro);
   border-radius: 8px;
-  padding: 0.35rem 0.6rem;
-}
-
-.navegacion {
-  flex: 1 1 auto;
+  padding: 8px 12px;
 }
 
 .nav-lista {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 0.4rem 1rem;
-  margin: 0;
-  padding: 0;
+  flex: 0 1 auto;
+  gap: 20px;
   list-style: none;
-  justify-content: flex-end;
 }
 
 .nav-enlace {
@@ -137,8 +127,9 @@
   font-size: 0.95rem;
   font-weight: 600;
   text-decoration: none;
-  padding: 0.35rem 0.15rem;
+  padding: 8px 4px;
   border-bottom: 2px solid transparent;
+  white-space: nowrap;
 }
 
 .nav-enlace:hover {
@@ -151,18 +142,23 @@
 }
 
 /* =========================================
-   Contenido principal
+   Layout de contenido
    ========================================= */
 
 .principal {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   max-width: 1100px;
-  margin: 0 auto;
-  padding: 2.5rem 8% 3.5rem;
+  margin: 32px auto;
+  padding: 20px 8% 48px;
 }
 
 .seccion {
-  margin-bottom: 2.4rem;
-  padding: 1.6rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
   background-color: var(--color-superficie);
   border: 1px solid #e2d8c4;
   border-top: 6px solid var(--color-primario);
@@ -179,35 +175,42 @@
 }
 
 .lista {
-  margin: 0;
-  padding-left: 1.2rem;
+  padding-left: 24px;
   color: var(--color-texto-suave);
   font-family: var(--fuente-cuerpo);
 }
 
 .lista__item {
-  margin-bottom: 0.45rem;
+  margin-bottom: 8px;
 }
 
 .grupo-tarjetas {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  align-items: stretch;
+  gap: 20px;
 }
 
 .tarjeta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   flex: 1 1 240px;
-  padding: 1.1rem 1rem;
+  padding: 20px;
   background-color: var(--color-fondo);
   border-left: 4px solid var(--color-acento);
 }
 
 /* =========================================
-   Imùgenes
+   Imagenes
    ========================================= */
 
 .figura {
-  margin: 1.2rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  background-color: var(--color-fondo);
 }
 
 .figura__imagen {
@@ -215,12 +218,11 @@
   width: 100%;
   max-width: 520px;
   height: auto;
-  background-color: var(--color-fondo);
+  background-color: var(--color-superficie);
   border: 1px solid #e2d8c4;
 }
 
 .figura__leyenda {
-  margin-top: 0.5rem;
   color: var(--color-texto-suave);
   font-size: 0.95rem;
   font-style: italic;
@@ -231,16 +233,18 @@
    ========================================= */
 
 .formulario {
-  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .campo {
-  margin: 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .etiqueta {
-  display: block;
-  margin-bottom: 0.35rem;
   color: var(--color-secundario);
   font-weight: 600;
 }
@@ -248,7 +252,7 @@
 .entrada {
   width: 100%;
   max-width: 480px;
-  padding: 0.6rem 0.7rem;
+  padding: 20px;
   border: 1px solid #cfc3ad;
   background-color: var(--color-superficie);
   color: var(--color-texto);
@@ -257,7 +261,8 @@
 }
 
 .boton {
-  padding: 0.7rem 1.3rem;
+  align-self: flex-start;
+  padding: 20px 28px;
   border: 0;
   background-color: var(--color-acento);
   color: var(--color-secundario);
@@ -271,27 +276,29 @@
 }
 
 /* =========================================
-   Pie de pùgina
+   Pie de pagina
    ========================================= */
 
 .pie {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   background-color: var(--color-secundario);
   color: var(--color-claro);
-  padding: 1.6rem 8%;
+  padding: 20px 8%;
+  margin-top: 24px;
 }
 
 .pie__texto {
-  margin: 0 0 0.6rem;
   color: var(--color-claro);
   font-size: 0.95rem;
 }
 
 .pie-lista {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 0.8rem 1.2rem;
-  margin: 0;
-  padding: 0;
+  gap: 20px;
   list-style: none;
 }
 
