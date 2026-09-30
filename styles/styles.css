@@ -26,19 +26,38 @@
 }
 
 /* =========================================
-   Base
+   Base mobile-first
    ========================================= */
 
 .pagina {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "encabezado"
+    "principal"
+    "pie";
+  gap: 0;
   min-height: 100vh;
   color: var(--color-texto);
   font-family: var(--fuente-cuerpo);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
   background-color: var(--color-fondo);
   background-image: radial-gradient(#e6ddcc 1px, #f4efe4 1px);
   background-size: 22px 22px;
+}
+
+.encabezado {
+  grid-area: encabezado;
+}
+
+.principal {
+  grid-area: principal;
+}
+
+.pie {
+  grid-area: pie;
 }
 
 /* =========================================
@@ -48,7 +67,7 @@
 .titulo {
   color: var(--color-secundario);
   font-family: var(--fuente-titulos);
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1.15;
 }
@@ -56,7 +75,7 @@
 .subtitulo {
   color: var(--color-primario);
   font-family: var(--fuente-titulos);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.25;
 }
@@ -64,14 +83,14 @@
 .titulo-tercero {
   color: var(--color-secundario);
   font-family: var(--fuente-titulos);
-  font-size: 1.45rem;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
 .texto {
   color: var(--color-texto-suave);
   font-family: var(--fuente-cuerpo);
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -86,15 +105,15 @@
 .encabezado {
   background-color: var(--color-primario);
   color: var(--color-claro);
-  padding: 20px 8%;
+  padding: 20px 5%;
 }
 
 .navegacion {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 24px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
 }
 
 .marca {
@@ -105,7 +124,7 @@
 
 .logo {
   display: block;
-  width: 160px;
+  width: 140px;
   height: auto;
   background-color: var(--color-claro);
   border-radius: 8px;
@@ -116,9 +135,9 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  flex: 0 1 auto;
-  gap: 20px;
+  gap: 12px 16px;
   list-style: none;
+  width: 100%;
 }
 
 .nav-enlace {
@@ -129,7 +148,6 @@
   text-decoration: none;
   padding: 8px 4px;
   border-bottom: 2px solid transparent;
-  white-space: nowrap;
 }
 
 .nav-enlace:hover {
@@ -142,23 +160,25 @@
 }
 
 /* =========================================
-   Layout de contenido
+   Layout de contenido (apilado 100% en mobile)
    ========================================= */
 
 .principal {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  max-width: 1100px;
-  margin: 32px auto;
-  padding: 20px 8% 48px;
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 20px 5% 40px;
 }
 
 .seccion {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 24px;
+  width: 100%;
+  padding: 20px;
   background-color: var(--color-superficie);
   border: 1px solid #e2d8c4;
   border-top: 6px solid var(--color-primario);
@@ -184,18 +204,91 @@
   margin-bottom: 8px;
 }
 
+/* =========================================
+   Grilla de Inicio (grid-template-areas)
+   ========================================= */
+
+.grilla-inicio {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "hero"
+    "info"
+    "imagen"
+    "oficios"
+    "propuestas";
+  gap: 24px;
+  width: 100%;
+}
+
+.grilla-inicio__hero {
+  grid-area: hero;
+}
+
+.grilla-inicio__info {
+  grid-area: info;
+}
+
+.grilla-inicio__imagen {
+  grid-area: imagen;
+}
+
+.grilla-inicio__oficios {
+  grid-area: oficios;
+}
+
+.grilla-inicio__propuestas {
+  grid-area: propuestas;
+}
+
+/* =========================================
+   Grilla de Proyectos (grid-template-areas)
+   ========================================= */
+
+.grilla-proyectos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "intro"
+    "contexto"
+    "galeria"
+    "beneficios";
+  gap: 24px;
+  width: 100%;
+}
+
+.grilla-proyectos__intro {
+  grid-area: intro;
+}
+
+.grilla-proyectos__contexto {
+  grid-area: contexto;
+}
+
+.grilla-proyectos__galeria {
+  grid-area: galeria;
+}
+
+.grilla-proyectos__beneficios {
+  grid-area: beneficios;
+}
+
+/* =========================================
+   Tarjetas: 1 columna en mobile
+   ========================================= */
+
 .grupo-tarjetas {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 20px;
+  width: 100%;
 }
 
 .tarjeta {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  flex: 1 1 240px;
+  width: 100%;
   padding: 20px;
   background-color: var(--color-fondo);
   border-left: 4px solid var(--color-acento);
@@ -216,7 +309,6 @@
 .figura__imagen {
   display: block;
   width: 100%;
-  max-width: 520px;
   height: auto;
   background-color: var(--color-superficie);
   border: 1px solid #e2d8c4;
@@ -251,7 +343,6 @@
 
 .entrada {
   width: 100%;
-  max-width: 480px;
   padding: 20px;
   border: 1px solid #cfc3ad;
   background-color: var(--color-superficie);
@@ -285,8 +376,7 @@
   gap: 16px;
   background-color: var(--color-secundario);
   color: var(--color-claro);
-  padding: 20px 8%;
-  margin-top: 24px;
+  padding: 20px 5%;
 }
 
 .pie__texto {
@@ -310,4 +400,102 @@
 
 .pie-enlace:hover {
   color: var(--color-claro);
+}
+
+/* =========================================
+   Tablet
+   ========================================= */
+
+@media (min-width: 768px) {
+  .pagina {
+    font-size: 17px;
+  }
+
+  .titulo {
+    font-size: 2.5rem;
+  }
+
+  .subtitulo {
+    font-size: 1.75rem;
+  }
+
+  .navegacion {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .nav-lista {
+    width: auto;
+    gap: 20px;
+  }
+
+  .grupo-tarjetas {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* =========================================
+   Escritorio: min-width 1024px
+   ========================================= */
+
+@media (min-width: 1024px) {
+  .pagina {
+    font-size: 18px;
+  }
+
+  .titulo {
+    font-size: 3rem;
+  }
+
+  .subtitulo {
+    font-size: 2rem;
+  }
+
+  .titulo-tercero {
+    font-size: 1.45rem;
+  }
+
+  .encabezado,
+  .pie {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .principal {
+    gap: 32px;
+    padding: 32px 8% 48px;
+  }
+
+  .seccion {
+    padding: 24px;
+  }
+
+  .grilla-inicio {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "hero hero"
+      "info imagen"
+      "oficios oficios"
+      "propuestas propuestas";
+    gap: 32px;
+  }
+
+  .grilla-proyectos {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "intro intro"
+      "contexto beneficios"
+      "galeria galeria";
+    gap: 32px;
+  }
+
+  .grupo-tarjetas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grilla-proyectos .grupo-tarjetas {
+    grid-template-columns: 1fr 1fr;
+  }
 }
