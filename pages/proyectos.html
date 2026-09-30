@@ -7,21 +7,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
   </head>
   <body class="pagina">
     <header class="encabezado">
-      <nav class="navegacion">
-        <a class="marca" href="../index.html">
-          <img class="logo" src="../images/logo.svg" alt="Logotipo de Nido de Ideas, taller creativo">
-        </a>
-        <ul class="nav-lista">
-          <li><a class="nav-enlace" href="../index.html">Inicio</a></li>
-          <li><a class="nav-enlace" href="sobre-mi.html">Sobre mí</a></li>
-          <li><a class="nav-enlace nav-enlace--actual" href="proyectos.html">Proyectos</a></li>
-          <li><a class="nav-enlace" href="servicios.html">Servicios</a></li>
-          <li><a class="nav-enlace" href="contacto.html">Contacto</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid px-0">
+          <a class="navbar-brand marca" href="../index.html">
+            <img class="logo" src="../images/logo.svg" alt="Logotipo de Nido de Ideas, taller creativo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav ms-lg-auto">
+              <li class="nav-item"><a class="nav-link nav-enlace" href="../index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link nav-enlace" href="sobre-mi.html">Sobre mí</a></li>
+              <li class="nav-item"><a class="nav-link nav-enlace nav-enlace--actual" href="proyectos.html">Proyectos</a></li>
+              <li class="nav-item"><a class="nav-link nav-enlace" href="servicios.html">Servicios</a></li>
+              <li class="nav-item"><a class="nav-link nav-enlace" href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -44,23 +52,50 @@
         </section>
 
         <section class="seccion grilla-proyectos__galeria">
-          <h2 class="subtitulo">Proyectos destacados</h2>
+          <h2 class="subtitulo">Galería de proyectos</h2>
+          <div id="galeriaProyectos" class="carousel slide galeria-carousel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#galeriaProyectos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
+              <button type="button" data-bs-target="#galeriaProyectos" data-bs-slide-to="1" aria-label="Imagen 2"></button>
+              <button type="button" data-bs-target="#galeriaProyectos" data-bs-slide-to="2" aria-label="Imagen 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../images/ceramica.svg" alt="Cuenco de cerámica artesanal sobre una mesa de taller">
+                <div class="carousel-caption">
+                  <p>Cuencos y jarras del ciclo de mesa.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../images/ilustracion.svg" alt="Lámina ilustrada con un tallo y dos flores amarillas">
+                <div class="carousel-caption">
+                  <p>Láminas de patio, listas para enmarcar.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../images/taller.svg" alt="Mesa de trabajo del taller con piezas, papeles y herramientas">
+                <div class="carousel-caption">
+                  <p>El espacio compartido durante las clases.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#galeriaProyectos" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#galeriaProyectos" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
           <div class="grupo-tarjetas">
-            <article class="tarjeta">
+            <article class="tarjeta" tabindex="0">
               <h3 class="titulo-tercero">Cuencos y jarras</h3>
               <p class="texto">Un ciclo de cuatro encuentros para modelar un set de cubiertos de mesa: cuencos, una jarra y platos pequeños.</p>
-              <figure class="figura">
-                <img class="figura__imagen" src="../images/ceramica.svg" alt="Cuenco de cerámica artesanal sobre una mesa de taller">
-                <figcaption class="figura__leyenda">Pieza de cerámica modelada a mano en el ciclo de mesa.</figcaption>
-              </figure>
             </article>
-            <article class="tarjeta">
+            <article class="tarjeta" tabindex="0">
               <h3 class="titulo-tercero">Láminas de patio</h3>
               <p class="texto">Observamos plantas reales, armamos una composición y terminamos una lámina lista para enmarcar.</p>
-              <figure class="figura">
-                <img class="figura__imagen" src="../images/ilustracion.svg" alt="Lámina ilustrada con un tallo y dos flores amarillas">
-                <figcaption class="figura__leyenda">Lámina botánica realizada durante un taller de un día.</figcaption>
-              </figure>
             </article>
           </div>
         </section>
@@ -86,5 +121,6 @@
         <li><a class="pie-enlace" href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
       </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
