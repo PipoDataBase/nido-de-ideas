@@ -33,75 +33,77 @@
       </nav>
     </header>
     <main class="principal">
-      <section class="seccion seccion--destacada">
-        <h1 class="titulo">Servicios del taller</h1>
-        <p class="texto">
-          Ofrecemos clases, talleres de un día y encargos. Cada propuesta
-          incluye materiales y un acompañamiento claro, de la primera prueba
-          hasta la pieza terminada.
-        </p>
-      </section>
-      <section class="seccion">
-        <h2 class="subtitulo">Qué incluye cada encuentro</h2>
-        <p class="texto">
-          Los servicios están pensados para principiantes y para quienes ya
-          tienen práctica. Elegí la modalidad que mejor se adapte a tu tiempo.
-        </p>
-        <figure class="figura">
-          <img class="figura__imagen" src="../images/consulta.svg" alt="Consulta sobre clases, materiales y reservas del taller">
-          <figcaption class="figura__leyenda">Te ayudamos a elegir el taller según tu experiencia y tu objetivo.</figcaption>
-        </figure>
-      </section>
-      <section class="seccion">
-        <h2 class="subtitulo">Propuestas disponibles</h2>
-        <div class="accordion acordeon-taller" id="acordeonServicios">
-          <div class="accordion-item">
-            <h3 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#servicioUno" aria-expanded="true" aria-controls="servicioUno">
-                Clases de cerámica
-              </button>
-            </h3>
-            <div id="servicioUno" class="accordion-collapse collapse show" data-bs-parent="#acordeonServicios">
-              <div class="accordion-body">
-                Encuentros semanales de dos horas. Modelado a mano, esmaltes y una pieza para llevar. No hace falta experiencia previa.
+      <div class="grilla-servicios">
+        <section class="seccion seccion--destacada grilla-servicios__hero">
+          <h1 class="titulo">Servicios del taller</h1>
+          <p class="texto">
+            Ofrecemos clases, talleres de un día y encargos. Cada propuesta
+            incluye materiales y un acompañamiento claro, de la primera prueba
+            hasta la pieza terminada.
+          </p>
+        </section>
+        <section class="seccion grilla-servicios__incluye">
+          <h2 class="subtitulo">Qué incluye cada encuentro</h2>
+          <p class="texto">
+            Los servicios están pensados para principiantes y para quienes ya
+            tienen práctica. Elegí la modalidad que mejor se adapte a tu tiempo.
+          </p>
+          <figure class="figura">
+            <img class="figura__imagen" src="../images/consulta.svg" alt="Consulta sobre clases, materiales y reservas del taller">
+            <figcaption class="figura__leyenda">Te ayudamos a elegir el taller según tu experiencia y tu objetivo.</figcaption>
+          </figure>
+        </section>
+        <section class="seccion grilla-servicios__propuestas">
+          <h2 class="subtitulo">Propuestas disponibles</h2>
+          <div class="accordion acordeon-taller" id="acordeonServicios">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#servicioUno" aria-expanded="true" aria-controls="servicioUno">
+                  Clases de cerámica
+                </button>
+              </h3>
+              <div id="servicioUno" class="accordion-collapse collapse show" data-bs-parent="#acordeonServicios">
+                <div class="accordion-body">
+                  Encuentros semanales de dos horas. Modelado a mano, esmaltes y una pieza para llevar. No hace falta experiencia previa.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#servicioDos" aria-expanded="false" aria-controls="servicioDos">
+                  Ilustración botánica
+                </button>
+              </h3>
+              <div id="servicioDos" class="accordion-collapse collapse" data-bs-parent="#acordeonServicios">
+                <div class="accordion-body">
+                  Observamos una planta real y armamos una lámina. Ideal para empezar a dibujar sin presión.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#servicioTres" aria-expanded="false" aria-controls="servicioTres">
+                  Taller de un día
+                </button>
+              </h3>
+              <div id="servicioTres" class="accordion-collapse collapse" data-bs-parent="#acordeonServicios">
+                <div class="accordion-body">
+                  Una experiencia de cuatro horas para probar un oficio o para regalar. Cupos limitados y materiales incluidos.
+                </div>
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h3 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#servicioDos" aria-expanded="false" aria-controls="servicioDos">
-                Ilustración botánica
-              </button>
-            </h3>
-            <div id="servicioDos" class="accordion-collapse collapse" data-bs-parent="#acordeonServicios">
-              <div class="accordion-body">
-                Observamos una planta real y armamos una lámina. Ideal para empezar a dibujar sin presión.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h3 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#servicioTres" aria-expanded="false" aria-controls="servicioTres">
-                Taller de un día
-              </button>
-            </h3>
-            <div id="servicioTres" class="accordion-collapse collapse" data-bs-parent="#acordeonServicios">
-              <div class="accordion-body">
-                Una experiencia de cuatro horas para probar un oficio o para regalar. Cupos limitados y materiales incluidos.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="seccion">
-        <h2 class="subtitulo">Cómo reservar</h2>
-        <ul class="lista">
-          <li class="lista__item">La reserva se confirma con seña.</li>
-          <li class="lista__item">El cupo es limitado: máximo ocho personas por clase.</li>
-          <li class="lista__item">Si avisás con 48 horas, se puede reprogramar.</li>
-          <li class="lista__item">Los menores de 16 años pueden participar con un adulto.</li>
-        </ul>
-      </section>
+        </section>
+        <section class="seccion grilla-servicios__reserva">
+          <h2 class="subtitulo">Cómo reservar</h2>
+          <ul class="lista">
+            <li class="lista__item">La reserva se confirma con seña.</li>
+            <li class="lista__item">El cupo es limitado: máximo ocho personas por clase.</li>
+            <li class="lista__item">Si avisás con 48 horas, se puede reprogramar.</li>
+            <li class="lista__item">Los menores de 16 años pueden participar con un adulto.</li>
+          </ul>
+        </section>
+      </div>
     </main>
     <footer class="pie">
       <p class="pie__texto">© 2026 Nido de Ideas. Todos los derechos reservados.</p>

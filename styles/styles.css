@@ -277,6 +277,38 @@
 }
 
 /* =========================================
+   Grilla de Servicios (grid-template-areas)
+   ========================================= */
+
+.grilla-servicios {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "hero"
+    "incluye"
+    "propuestas"
+    "reserva";
+  gap: 24px;
+  width: 100%;
+}
+
+.grilla-servicios__hero {
+  grid-area: hero;
+}
+
+.grilla-servicios__incluye {
+  grid-area: incluye;
+}
+
+.grilla-servicios__propuestas {
+  grid-area: propuestas;
+}
+
+.grilla-servicios__reserva {
+  grid-area: reserva;
+}
+
+/* =========================================
    Tarjetas: 1 columna en mobile
    ========================================= */
 
@@ -603,6 +635,13 @@
   .grupo-tarjetas {
     grid-template-columns: 1fr 1fr;
   }
+
+  .pie {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 /* =========================================
@@ -657,6 +696,15 @@
       "intro intro"
       "contexto beneficios"
       "galeria galeria";
+    gap: 32px;
+  }
+
+  .grilla-servicios {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "hero hero"
+      "incluye reserva"
+      "propuestas propuestas";
     gap: 32px;
   }
 
