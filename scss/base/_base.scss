@@ -1,0 +1,51 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pagina {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "encabezado"
+    "principal"
+    "pie";
+  gap: 0;
+  min-height: 100vh;
+  color: $color-texto;
+  font-family: $fuente-cuerpo;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: $color-fondo;
+  background-image: radial-gradient($color-punto 1px, $color-fondo 1px);
+  background-size: 22px 22px;
+
+  @include desde($bp-tablet) {
+    font-size: 17px;
+  }
+
+  @include desde($bp-escritorio) {
+    font-size: 18px;
+  }
+}
+
+.principal {
+  grid-area: principal;
+  display: flex;
+  flex-direction: column;
+  gap: $espacio-xxl;
+  width: 100%;
+  max-width: $ancho-contenido;
+  margin: $espacio-xxl auto;
+  padding: $espacio-xl 5% 40px;
+
+  @include desde($bp-escritorio) {
+    gap: $espacio-bloque;
+    padding: $espacio-bloque 8% 48px;
+  }
+}

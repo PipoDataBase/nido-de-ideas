@@ -1,0 +1,56 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.titulo {
+  color: $color-secundario;
+  font-family: $fuente-titulos;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.15;
+
+  @include desde($bp-tablet) {
+    font-size: 2.5rem;
+  }
+
+  @include desde($bp-escritorio) {
+    font-size: 3rem;
+  }
+}
+
+.subtitulo {
+  color: $color-primario;
+  font-family: $fuente-titulos;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.25;
+
+  @include desde($bp-tablet) {
+    font-size: 1.75rem;
+  }
+
+  @include desde($bp-escritorio) {
+    font-size: 2rem;
+  }
+}
+
+.titulo-tercero {
+  color: $color-secundario;
+  font-family: $fuente-titulos;
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  @include desde($bp-escritorio) {
+    font-size: 1.45rem;
+  }
+}
+
+.texto {
+  color: $color-texto-suave;
+  font-family: $fuente-cuerpo;
+  font-size: 1rem;
+  font-weight: 400;
+
+  &--claro {
+    color: $color-claro;
+  }
+}
