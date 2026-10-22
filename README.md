@@ -71,7 +71,9 @@ Para recompilar solo mientras se editan los partials: `npm run watch`.
 ## Tecnologías
 
 - HTML5 semántico
-- SCSS (variables, mixins, nesting y partials) compilado a un único CSS
+- SCSS compilado a un único CSS: variables, nesting, mixins con parámetros, `@extend` y operadores
+- Animación nativa con `@keyframes` en el logotipo y `transition` en los controles
+- AOS por CDN para la entrada de secciones, tarjetas y figuras
 - Bootstrap 5.3.3 por CDN (navbar, carousel y acordeón)
 
-Inicio, Proyectos y Servicios están adaptados a mobile y desktop. Sobre mí y Contacto mantienen contenido y estilos del resto del sitio.
+Las cinco páginas están pensadas mobile-first y se reacomodan en tablet (`768px`) y escritorio (`1024px`).

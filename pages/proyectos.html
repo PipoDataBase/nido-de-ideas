@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <link rel="stylesheet" href="../styles/styles.css">
   </head>
   <body class="pagina">
@@ -35,7 +36,7 @@
 
     <main class="principal">
       <div class="grilla-proyectos">
-        <section class="seccion seccion--destacada grilla-proyectos__intro">
+        <section class="seccion seccion--destacada grilla-proyectos__intro" data-aos="fade-up">
           <h1 class="titulo">Proyectos del taller</h1>
           <p class="texto">
             Esta página reúne piezas, láminas y experiencias de clase. Cada
@@ -43,7 +44,7 @@
           </p>
         </section>
 
-        <section class="seccion grilla-proyectos__contexto">
+        <section class="seccion grilla-proyectos__contexto" data-aos="fade-up">
           <h2 class="subtitulo">Selección reciente</h2>
           <p class="texto">
             Elegí dos líneas que se repiten en el taller: objetos de cerámica
@@ -51,7 +52,7 @@
           </p>
         </section>
 
-        <section class="seccion grilla-proyectos__galeria">
+        <section class="seccion grilla-proyectos__galeria" data-aos="fade-up">
           <h2 class="subtitulo">Galería de proyectos</h2>
           <div id="galeriaProyectos" class="carousel slide galeria-carousel" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -89,18 +90,18 @@
             </button>
           </div>
           <div class="grupo-tarjetas">
-            <article class="tarjeta" tabindex="0">
+            <article class="tarjeta" tabindex="0" data-aos="fade-up">
               <h3 class="titulo-tercero">Cuencos y jarras</h3>
               <p class="texto">Un ciclo de cuatro encuentros para modelar un set de cubiertos de mesa: cuencos, una jarra y platos pequeños.</p>
             </article>
-            <article class="tarjeta" tabindex="0">
+            <article class="tarjeta" tabindex="0" data-aos="fade-up">
               <h3 class="titulo-tercero">Láminas de patio</h3>
               <p class="texto">Observamos plantas reales, armamos una composición y terminamos una lámina lista para enmarcar.</p>
             </article>
           </div>
         </section>
 
-        <section class="seccion grilla-proyectos__beneficios">
+        <section class="seccion grilla-proyectos__beneficios" data-aos="fade-up">
           <h2 class="subtitulo">Beneficios de participar</h2>
           <ul class="lista">
             <li class="lista__item">Salís con una pieza terminada o en proceso claro.</li>
@@ -122,5 +123,15 @@
       </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+        once: true,
+        offset: 40,
+        easing: "ease-out-cubic",
+        disable: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+      });
+    </script>
   </body>
 </html>

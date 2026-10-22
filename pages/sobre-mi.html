@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <link rel="stylesheet" href="../styles/styles.css">
   </head>
   <body class="pagina">
@@ -32,8 +33,8 @@
         </div>
       </nav>
     </header>
-    <main class="principal">
-      <section class="seccion seccion--destacada">
+    <main class="principal grilla-simple">
+      <section class="seccion seccion--destacada grilla-simple__hero" data-aos="fade-up">
         <h1 class="titulo">Sobre mí</h1>
         <p class="texto">
           Soy Marina Soler, ceramista e ilustradora. Armé Nido de Ideas para
@@ -41,19 +42,19 @@
           tiempo real de práctica.
         </p>
       </section>
-      <section class="seccion">
+      <section class="seccion grilla-simple__cuerpo" data-aos="fade-up">
         <h2 class="subtitulo">Cómo nació el taller</h2>
         <p class="texto">
           Después de varios años trabajando en piezas para el hogar, empecé a
           recibir consultas de personas que querían aprender. El taller nació
           como una mesa compartida y hoy es un espacio con clases semanales.
         </p>
-        <figure class="figura">
+        <figure class="figura" data-aos="zoom-in">
           <img class="figura__imagen" src="../images/retrato.svg" alt="Ilustración de Marina Soler, titular del taller Nido de Ideas">
           <figcaption class="figura__leyenda">Marina Soler, fundadora de Nido de Ideas.</figcaption>
         </figure>
       </section>
-      <section class="seccion">
+      <section class="seccion grilla-simple__complemento" data-aos="fade-up">
         <h2 class="subtitulo">Formación y oficios</h2>
         <ul class="lista">
           <li class="lista__item">Cerámica de baja temperatura y esmaltes propios.</li>
@@ -62,18 +63,18 @@
           <li class="lista__item">Encargos de objetos para cocina y plantas.</li>
         </ul>
       </section>
-      <section class="seccion">
+      <section class="seccion grilla-simple__cierre" data-aos="fade-up">
         <h2 class="subtitulo">Manera de trabajar</h2>
         <div class="grupo-tarjetas">
-          <article class="tarjeta" tabindex="0">
+          <article class="tarjeta" tabindex="0" data-aos="fade-up">
             <h3 class="titulo-tercero">Grupos chicos</h3>
             <p class="texto">Cada clase tiene cupos limitados para poder mirar el proceso de cada persona y corregir con tiempo.</p>
           </article>
-          <article class="tarjeta" tabindex="0">
+          <article class="tarjeta" tabindex="0" data-aos="fade-up">
             <h3 class="titulo-tercero">Materiales incluidos</h3>
             <p class="texto">Barro, herramientas, papeles y pinturas están en el taller. Solo hace falta venir con ganas de probar.</p>
           </article>
-          <article class="tarjeta" tabindex="0">
+          <article class="tarjeta" tabindex="0" data-aos="fade-up">
             <h3 class="titulo-tercero">Proceso a la vista</h3>
             <p class="texto">Mostramos el paso a paso: del primer croquis o el primer rollito de barro hasta la pieza terminada.</p>
           </article>
@@ -90,5 +91,15 @@
       </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+        once: true,
+        offset: 40,
+        easing: "ease-out-cubic",
+        disable: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+      });
+    </script>
   </body>
 </html>

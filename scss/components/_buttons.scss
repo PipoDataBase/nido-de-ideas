@@ -3,8 +3,14 @@
 
 .boton {
   align-self: flex-start;
+  width: 100%;
   padding: $espacio-xl $padding-boton-x;
   max-width: 100%;
+  text-align: center;
+
+  @include desde($bp-tablet) {
+    width: auto;
+  }
   border: 0;
   background-color: $color-acento;
   color: $color-secundario;

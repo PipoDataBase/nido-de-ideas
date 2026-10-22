@@ -47,15 +47,26 @@
     background-color: $color-velo;
     border-radius: $radio-borde-chico;
     padding: $espacio-s $espacio-m;
-    left: 10%;
-    right: 10%;
-    bottom: $espacio-l;
+    left: 18%;
+    right: 18%;
+    bottom: $espacio-bloque;
+
+    @include desde($bp-tablet) {
+      left: 14%;
+      right: 14%;
+    }
+
+    @include desde($bp-escritorio) {
+      left: 12%;
+      right: 12%;
+    }
 
     p {
       margin: 0;
       color: $color-claro;
       font-family: $fuente-cuerpo;
       font-size: 0.95rem;
+      overflow-wrap: break-word;
     }
   }
 

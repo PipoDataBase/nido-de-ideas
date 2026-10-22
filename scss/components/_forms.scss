@@ -4,6 +4,8 @@
   display: flex;
   flex-direction: column;
   gap: $espacio-l;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .campo {
@@ -19,6 +21,8 @@
 
 .entrada {
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
   padding: $espacio-xl;
   border: 1px solid $color-borde-entrada;
   background-color: $color-superficie;

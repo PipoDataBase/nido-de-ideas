@@ -12,6 +12,11 @@
     "propuestas";
   gap: $espacio-xxl;
   width: 100%;
+  min-width: 0;
+
+  > * {
+    min-width: 0;
+  }
 
   @include desde($bp-escritorio) {
     grid-template-columns: 2fr 1fr;
@@ -54,6 +59,11 @@
     "beneficios";
   gap: $espacio-xxl;
   width: 100%;
+  min-width: 0;
+
+  > * {
+    min-width: 0;
+  }
 
   @include desde($bp-escritorio) {
     grid-template-columns: 2fr 1fr;
@@ -91,6 +101,11 @@
     "reserva";
   gap: $espacio-xxl;
   width: 100%;
+  min-width: 0;
+
+  > * {
+    min-width: 0;
+  }
 
   @include desde($bp-escritorio) {
     grid-template-columns: 2fr 1fr;
@@ -115,5 +130,42 @@
 
   &__reserva {
     grid-area: reserva;
+  }
+}
+
+.principal.grilla-simple {
+  @include desde($bp-escritorio) {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas:
+      "hero hero"
+      "cuerpo complemento"
+      "cierre cierre";
+    align-items: start;
+    gap: $espacio-bloque;
+  }
+}
+
+.grilla-simple__hero {
+  @include desde($bp-escritorio) {
+    grid-area: hero;
+  }
+}
+
+.grilla-simple__cuerpo {
+  @include desde($bp-escritorio) {
+    grid-area: cuerpo;
+  }
+}
+
+.grilla-simple__complemento {
+  @include desde($bp-escritorio) {
+    grid-area: complemento;
+  }
+}
+
+.grilla-simple__cierre {
+  @include desde($bp-escritorio) {
+    grid-area: cierre;
   }
 }

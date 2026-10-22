@@ -1,6 +1,13 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
+.titulo,
+.subtitulo,
+.titulo-tercero,
+.texto {
+  overflow-wrap: break-word;
+}
+
 .titulo {
   color: $color-secundario;
   font-family: $fuente-titulos;

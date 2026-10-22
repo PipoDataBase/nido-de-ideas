@@ -24,7 +24,9 @@
 
   &__texto {
     color: $color-claro;
+    min-width: 0;
     font-size: 0.95rem;
+    overflow-wrap: break-word;
   }
 }
 

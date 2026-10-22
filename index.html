@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="pagina">
@@ -35,7 +36,7 @@
 
     <main class="principal">
       <div class="grilla-inicio">
-        <section class="seccion seccion--destacada grilla-inicio__hero">
+        <section class="seccion seccion--destacada grilla-inicio__hero" data-aos="fade-up">
           <h1 class="titulo">Un taller para crear con las manos y las ideas</h1>
           <p class="texto">
             Nido de Ideas es un espacio de cerámica, ilustración y talleres
@@ -44,7 +45,7 @@
           </p>
         </section>
 
-        <section class="seccion grilla-inicio__info">
+        <section class="seccion grilla-inicio__info" data-aos="fade-up">
           <h2 class="subtitulo">Información general</h2>
           <p class="texto">
             El taller está pensado para principiantes y para quienes ya vienen
@@ -57,7 +58,7 @@
           </p>
         </section>
 
-        <section class="seccion grilla-inicio__imagen">
+        <section class="seccion grilla-inicio__imagen" data-aos="fade-up">
           <h2 class="subtitulo">Galería del taller</h2>
           <div id="galeriaInicio" class="carousel slide galeria-carousel" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -96,7 +97,7 @@
           </div>
         </section>
 
-        <section class="seccion grilla-inicio__oficios">
+        <section class="seccion grilla-inicio__oficios" data-aos="fade-up">
           <h2 class="subtitulo">Qué vas a encontrar en el taller</h2>
           <ul class="lista">
             <li class="lista__item">Clases de cerámica para empezar desde cero.</li>
@@ -106,18 +107,18 @@
           </ul>
         </section>
 
-        <section class="seccion grilla-inicio__propuestas">
+        <section class="seccion grilla-inicio__propuestas" data-aos="fade-up">
           <h2 class="subtitulo">Propuestas destacadas</h2>
           <div class="grupo-tarjetas">
-            <article class="tarjeta" tabindex="0">
+            <article class="tarjeta" tabindex="0" data-aos="fade-up">
               <h3 class="titulo-tercero">Cerámica lenta</h3>
               <p class="texto">Modelado a mano, esmaltes y una pieza para llevar. Ideal si nunca tocaste el barro.</p>
             </article>
-            <article class="tarjeta" tabindex="0">
+            <article class="tarjeta" tabindex="0" data-aos="fade-up">
               <h3 class="titulo-tercero">Ilustración de planta</h3>
               <p class="texto">Observamos una planta real y armamos una lámina. No hace falta saber dibujar.</p>
             </article>
-            <article class="tarjeta" tabindex="0">
+            <article class="tarjeta" tabindex="0" data-aos="fade-up">
               <h3 class="titulo-tercero">Taller abierto</h3>
               <p class="texto">Un sábado al mes el espacio se abre para quien quiera continuar un proyecto propio.</p>
             </article>
@@ -136,5 +137,15 @@
       </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+        once: true,
+        offset: 40,
+        easing: "ease-out-cubic",
+        disable: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+      });
+    </script>
   </body>
 </html>

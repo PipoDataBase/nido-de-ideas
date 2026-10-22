@@ -16,6 +16,8 @@
 .marca {
   display: flex;
   align-items: center;
+  min-width: 0;
+  max-width: calc(100% - #{($espacio-bloque * 2) + $espacio-s});
   text-decoration: none;
 }
 

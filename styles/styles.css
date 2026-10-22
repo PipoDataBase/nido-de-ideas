@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+img,
+svg,
+video {
+  max-width: 100%;
+}
+
 .pagina {
   display: grid;
   grid-template-columns: 1fr;
@@ -15,6 +21,8 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
+  width: 100%;
+  min-width: 0;
   background-color: #f4efe4;
   background-image: radial-gradient(#e6ddcc 1px, #f4efe4 1px);
   background-size: 22px 22px;
@@ -36,6 +44,7 @@
   flex-direction: column;
   gap: 24px;
   width: 100%;
+  min-width: 0;
   max-width: 1200px;
   margin: 24px auto;
   padding: 20px 5% 40px;
@@ -45,6 +54,13 @@
     gap: 32px;
     padding: 32px 8% 48px;
   }
+}
+
+.titulo,
+.subtitulo,
+.titulo-tercero,
+.texto {
+  overflow-wrap: break-word;
 }
 
 .titulo {
@@ -121,6 +137,8 @@
 .marca {
   display: flex;
   align-items: center;
+  min-width: 0;
+  max-width: calc(100% - 72px);
   text-decoration: none;
 }
 
@@ -177,6 +195,7 @@
 
 .navbar-nav {
   gap: 4px 12px;
+  min-width: 0;
   list-style: none;
 }
 
@@ -227,7 +246,9 @@
 }
 .pie__texto {
   color: #f7f3ea;
+  min-width: 0;
   font-size: 0.95rem;
+  overflow-wrap: break-word;
 }
 
 .pie-lista {
@@ -304,6 +325,10 @@
   grid-template-areas: "hero" "info" "imagen" "oficios" "propuestas";
   gap: 24px;
   width: 100%;
+  min-width: 0;
+}
+.grilla-inicio > * {
+  min-width: 0;
 }
 @media (min-width: 1024px) {
   .grilla-inicio {
@@ -334,6 +359,10 @@
   grid-template-areas: "intro" "contexto" "galeria" "beneficios";
   gap: 24px;
   width: 100%;
+  min-width: 0;
+}
+.grilla-proyectos > * {
+  min-width: 0;
 }
 @media (min-width: 1024px) {
   .grilla-proyectos {
@@ -361,6 +390,10 @@
   grid-template-areas: "hero" "incluye" "propuestas" "reserva";
   gap: 24px;
   width: 100%;
+  min-width: 0;
+}
+.grilla-servicios > * {
+  min-width: 0;
 }
 @media (min-width: 1024px) {
   .grilla-servicios {
@@ -380,6 +413,40 @@
 }
 .grilla-servicios__reserva {
   grid-area: reserva;
+}
+
+@media (min-width: 1024px) {
+  .principal.grilla-simple {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: "hero hero" "cuerpo complemento" "cierre cierre";
+    align-items: start;
+    gap: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grilla-simple__hero {
+    grid-area: hero;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grilla-simple__cuerpo {
+    grid-area: cuerpo;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grilla-simple__complemento {
+    grid-area: complemento;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grilla-simple__cierre {
+    grid-area: cierre;
+  }
 }
 
 .grupo-tarjetas {
@@ -431,8 +498,17 @@
 
 .boton {
   align-self: flex-start;
+  width: 100%;
   padding: 20px 28px;
   max-width: 100%;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .boton {
+    width: auto;
+  }
+}
+.boton {
   border: 0;
   background-color: #d4a017;
   color: #2c3a32;
@@ -455,6 +531,8 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .campo {
@@ -470,6 +548,8 @@
 
 .entrada {
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
   padding: 20px;
   border: 1px solid #cfc3ad;
   background-color: #fffdf8;
@@ -521,15 +601,28 @@
   background-color: rgba(44, 58, 50, 0.78);
   border-radius: 6px;
   padding: 8px 12px;
-  left: 10%;
-  right: 10%;
-  bottom: 16px;
+  left: 18%;
+  right: 18%;
+  bottom: 32px;
+}
+@media (min-width: 768px) {
+  .galeria-carousel .carousel-caption {
+    left: 14%;
+    right: 14%;
+  }
+}
+@media (min-width: 1024px) {
+  .galeria-carousel .carousel-caption {
+    left: 12%;
+    right: 12%;
+  }
 }
 .galeria-carousel .carousel-caption p {
   margin: 0;
   color: #f7f3ea;
   font-family: "Source Sans 3", sans-serif;
   font-size: 0.95rem;
+  overflow-wrap: break-word;
 }
 .galeria-carousel .carousel-control-prev,
 .galeria-carousel .carousel-control-next {
@@ -567,6 +660,8 @@
   font-family: "Cormorant Garamond", serif;
   font-size: 1.15rem;
   font-weight: 600;
+  white-space: normal;
+  text-align: left;
   box-shadow: none;
 }
 .acordeon-taller .accordion-button:not(.collapsed) {

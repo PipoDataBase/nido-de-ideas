@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <link rel="stylesheet" href="../styles/styles.css">
   </head>
   <body class="pagina">
@@ -32,8 +33,8 @@
         </div>
       </nav>
     </header>
-    <main class="principal">
-      <section class="seccion seccion--destacada">
+    <main class="principal grilla-simple">
+      <section class="seccion seccion--destacada grilla-simple__hero" data-aos="fade-up">
         <h1 class="titulo">Contacto</h1>
         <p class="texto">
           Escribinos para reservar una clase, consultar un encargo o pedir
@@ -41,7 +42,7 @@
           sábado.
         </p>
       </section>
-      <section class="seccion">
+      <section class="seccion grilla-simple__cuerpo" data-aos="fade-up">
         <h2 class="subtitulo">Datos del taller</h2>
         <p class="texto">
           Nido de Ideas atiende consultas por correo y redes. Esta página
@@ -52,14 +53,14 @@
           <li class="lista__item">Horario de consultas: lunes a sábado de 10 a 18</li>
           <li class="lista__item">Modalidad: talleres presenciales con reserva previa</li>
         </ul>
-        <figure class="figura">
+        <figure class="figura" data-aos="zoom-in">
           <img class="figura__imagen" src="../images/contacto.svg" alt="Sobre cerrado y lápiz para enviar un mensaje al taller">
           <figcaption class="figura__leyenda">Podés escribir por correo o dejar un mensaje en el formulario.</figcaption>
         </figure>
       </section>
-      <section class="seccion">
+      <section class="seccion grilla-simple__complemento" data-aos="fade-up">
         <h2 class="subtitulo">Escribinos</h2>
-        <article class="tarjeta" tabindex="0">
+        <article class="tarjeta" tabindex="0" data-aos="fade-up">
           <h3 class="titulo-tercero">Formulario de consulta</h3>
           <p class="texto">
             Completá tus datos y contanos qué taller te interesa. Este
@@ -96,5 +97,15 @@
       </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+        once: true,
+        offset: 40,
+        easing: "ease-out-cubic",
+        disable: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+      });
+    </script>
   </body>
 </html>
