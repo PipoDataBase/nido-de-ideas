@@ -1,3 +1,6 @@
 // Único punto de entrada. El CSS publicado sale de este archivo.
 @use "base/base";
 @use "base/tipografia";
+@use "layout/header";
+@use "layout/nav";
+@use "layout/footer";

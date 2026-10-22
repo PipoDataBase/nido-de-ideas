@@ -1,0 +1,29 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.encabezado {
+  grid-area: encabezado;
+  background-color: $color-primario;
+  color: $color-claro;
+  padding: $espacio-m 5%;
+
+  @include desde($bp-escritorio) {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  display: block;
+  width: 140px;
+  height: auto;
+  background-color: $color-claro;
+  border-radius: $radio-borde;
+  padding: $espacio-s $espacio-m;
+}

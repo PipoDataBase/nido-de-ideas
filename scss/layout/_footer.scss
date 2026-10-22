@@ -1,0 +1,58 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.pie {
+  grid-area: pie;
+  display: flex;
+  flex-direction: column;
+  gap: $espacio-l;
+  background-color: $color-secundario;
+  color: $color-claro;
+  padding: $espacio-xl 5%;
+
+  @include desde($bp-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @include desde($bp-escritorio) {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  &__texto {
+    color: $color-claro;
+    font-size: 0.95rem;
+  }
+}
+
+.pie-lista {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: $espacio-xl;
+  list-style: none;
+}
+
+.pie-enlace {
+  color: $color-acento;
+  font-weight: 600;
+  text-decoration: none;
+  @include transicion-interactiva;
+
+  &:hover {
+    color: $color-claro;
+  }
+
+  &:focus {
+    color: $color-claro;
+    outline: 2px solid $color-acento;
+    outline-offset: 3px;
+  }
+
+  &:active {
+    color: $color-blanco;
+  }
+}

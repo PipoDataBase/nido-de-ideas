@@ -1,0 +1,62 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-toggler {
+  border: 2px solid $color-claro;
+  border-radius: $radio-borde-chico;
+  padding: $espacio-s 10px;
+  @include transicion-interactiva;
+
+  &:focus {
+    box-shadow: $foco-anillo;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-toggler-hover;
+  }
+
+  &:active {
+    background-color: $color-foco-suave;
+  }
+}
+
+.navbar-nav {
+  gap: $espacio-xs $espacio-m;
+  list-style: none;
+}
+
+.nav-enlace {
+  color: $color-claro !important;
+  font-family: $fuente-cuerpo;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: $espacio-s $espacio-xs !important;
+  border-bottom: 2px solid transparent;
+  @include transicion-interactiva;
+
+  &--actual {
+    color: $color-acento !important;
+    border-bottom-color: $color-acento;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-acento !important;
+    border-bottom-color: $color-acento;
+  }
+
+  &:active {
+    color: $color-blanco !important;
+  }
+}
