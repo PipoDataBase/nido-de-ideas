@@ -1,14 +1,29 @@
+@use "variables" as *;
+
 @mixin desde($ancho) {
   @media (min-width: $ancho) {
     @content;
   }
 }
 
-@mixin transicion-interactiva {
+@mixin transicion-interactiva($duracion: $duracion-base, $curva: ease) {
   transition:
-    color 0.25s ease,
-    background-color 0.25s ease,
-    border-color 0.25s ease,
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
+    color $duracion $curva,
+    background-color $duracion $curva,
+    border-color $duracion $curva,
+    transform $duracion $curva,
+    box-shadow $duracion $curva;
+}
+
+@mixin elevado($desplazamiento: $desplazamiento-tarjeta, $sombra: $sombra-tarjeta) {
+  transform: translateY($desplazamiento);
+  box-shadow: $sombra;
+}
+
+@mixin animar($nombre, $duracion: $duracion-entrada, $espera: 0s, $curva: ease-out) {
+  animation: $nombre $duracion $curva $espera both;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
 }

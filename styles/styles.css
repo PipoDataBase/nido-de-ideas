@@ -240,18 +240,27 @@
 }
 
 .seccion {
+  width: 100%;
+  background-color: #fffdf8;
+  border: 1px solid #e2d8c4;
+}
+
+.seccion {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 100%;
+  min-width: 0;
   padding: 20px;
-  background-color: #fffdf8;
-  border: 1px solid #e2d8c4;
   border-top: 6px solid #3d6b4f;
+}
+@media (min-width: 768px) {
+  .seccion {
+    padding: 24px;
+  }
 }
 @media (min-width: 1024px) {
   .seccion {
-    padding: 24px;
+    padding: 32px;
   }
 }
 .seccion--destacada {
@@ -361,6 +370,10 @@
   grid-template-columns: 1fr;
   gap: 20px;
   width: 100%;
+  min-width: 0;
+}
+.grupo-tarjetas > * {
+  min-width: 0;
 }
 @media (min-width: 768px) {
   .grupo-tarjetas {
@@ -384,6 +397,7 @@
   flex-direction: column;
   gap: 12px;
   width: 100%;
+  min-width: 0;
   padding: 20px;
   background-color: #f4efe4;
   border-left: 4px solid #d4a017;
@@ -401,6 +415,7 @@
 .boton {
   align-self: flex-start;
   padding: 20px 28px;
+  max-width: 100%;
   border: 0;
   background-color: #d4a017;
   color: #2c3a32;

@@ -42,10 +42,10 @@
   width: 100%;
   max-width: $ancho-contenido;
   margin: $espacio-xxl auto;
-  padding: $espacio-xl 5% 40px;
+  padding: $espacio-xl 5% $padding-cierre;
 
   @include desde($bp-escritorio) {
     gap: $espacio-bloque;
-    padding: $espacio-bloque 8% 48px;
+    padding: $espacio-bloque 8% ($espacio-xxl * 2);
   }
 }

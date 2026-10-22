@@ -6,6 +6,11 @@
   grid-template-columns: 1fr;
   gap: $espacio-xl;
   width: 100%;
+  min-width: 0;
+
+  > * {
+    min-width: 0;
+  }
 
   @include desde($bp-tablet) {
     grid-template-columns: 1fr 1fr;
@@ -27,16 +32,16 @@
   flex-direction: column;
   gap: $espacio-m;
   width: 100%;
+  min-width: 0;
   padding: $espacio-xl;
   background-color: $color-fondo;
   border-left: 4px solid $color-acento;
-  @include transicion-interactiva;
+  @include transicion-interactiva($duracion-base, ease);
 
   &:hover,
   &:focus,
   &:focus-within {
-    transform: translateY(-4px);
-    box-shadow: $sombra-tarjeta;
+    @include elevado($desplazamiento-tarjeta, $sombra-tarjeta);
     border-left-color: $color-primario;
   }
 

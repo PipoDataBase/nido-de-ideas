@@ -43,6 +43,14 @@ $ancho-contenido: 1200px;
 $bp-tablet: 768px;
 $bp-escritorio: 1024px;
 
+// Operadores: las medidas nuevas salen de las que ya existían.
+$duracion-base: 0.25s;
+$duracion-entrada: $duracion-base * 3;
+$alto-acento: $espacio-s - 2px;
+$padding-boton-x: $espacio-l + $espacio-m;
+$padding-cierre: $espacio-xl * 2;
+$desplazamiento-tarjeta: $espacio-xs * -1;
+
 $sombra-tarjeta: 0 8px 18px $color-sombra;
 $foco-anillo: 0 0 0 3px $color-foco-acento;
 $foco-acordeon: 0 0 0 0.2rem $color-foco-suave;

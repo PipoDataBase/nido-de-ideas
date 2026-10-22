@@ -3,7 +3,8 @@
 
 .boton {
   align-self: flex-start;
-  padding: $espacio-xl 28px;
+  padding: $espacio-xl $padding-boton-x;
+  max-width: 100%;
   border: 0;
   background-color: $color-acento;
   color: $color-secundario;

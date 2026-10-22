@@ -1,18 +1,27 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
+%caja {
+  width: 100%;
+  background-color: $color-superficie;
+  border: 1px solid $color-borde;
+}
+
 .seccion {
+  @extend %caja;
   display: flex;
   flex-direction: column;
   gap: $espacio-l;
-  width: 100%;
+  min-width: 0;
   padding: $espacio-xl;
-  background-color: $color-superficie;
-  border: 1px solid $color-borde;
-  border-top: 6px solid $color-primario;
+  border-top: $alto-acento solid $color-primario;
+
+  @include desde($bp-tablet) {
+    padding: $espacio-xxl;
+  }
 
   @include desde($bp-escritorio) {
-    padding: $espacio-xxl;
+    padding: $espacio-bloque;
   }
 
   &--destacada {
