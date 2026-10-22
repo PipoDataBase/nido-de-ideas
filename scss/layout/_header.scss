@@ -19,11 +19,25 @@
   text-decoration: none;
 }
 
+@keyframes entrada-logo {
+  from {
+    opacity: 0;
+    transform: translateY($espacio-m * -1);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .logo {
   display: block;
   width: 140px;
+  max-width: 100%;
   height: auto;
   background-color: $color-claro;
   border-radius: $radio-borde;
   padding: $espacio-s $espacio-m;
+  @include animar(entrada-logo, $duracion-entrada);
 }
