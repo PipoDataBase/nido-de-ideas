@@ -1,0 +1,43 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.acordeon-taller {
+  .accordion-item {
+    background-color: $color-fondo;
+    border: 1px solid $color-borde;
+  }
+
+  .accordion-button {
+    background-color: $color-superficie;
+    color: $color-secundario;
+    font-family: $fuente-titulos;
+    font-size: 1.15rem;
+    font-weight: 600;
+    box-shadow: none;
+
+    &:not(.collapsed) {
+      background-color: $color-primario;
+      color: $color-claro;
+    }
+  }
+
+  .accordion-body {
+    color: $color-texto-suave;
+    font-family: $fuente-cuerpo;
+  }
+}
+
+// El hover queda afuera de .acordeon-taller para no pisar el color del ítem abierto.
+.accordion-button {
+  @include transicion-interactiva;
+
+  &:hover,
+  &:focus {
+    color: $color-primario;
+    box-shadow: $foco-acordeon;
+  }
+
+  &:active {
+    background-color: $color-acordeon-activo;
+  }
+}

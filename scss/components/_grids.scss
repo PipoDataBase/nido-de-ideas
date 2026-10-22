@@ -1,0 +1,119 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.grilla-inicio {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "hero"
+    "info"
+    "imagen"
+    "oficios"
+    "propuestas";
+  gap: $espacio-xxl;
+  width: 100%;
+
+  @include desde($bp-escritorio) {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "hero hero"
+      "info imagen"
+      "oficios oficios"
+      "propuestas propuestas";
+    gap: $espacio-bloque;
+  }
+
+  &__hero {
+    grid-area: hero;
+  }
+
+  &__info {
+    grid-area: info;
+  }
+
+  &__imagen {
+    grid-area: imagen;
+  }
+
+  &__oficios {
+    grid-area: oficios;
+  }
+
+  &__propuestas {
+    grid-area: propuestas;
+  }
+}
+
+.grilla-proyectos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "intro"
+    "contexto"
+    "galeria"
+    "beneficios";
+  gap: $espacio-xxl;
+  width: 100%;
+
+  @include desde($bp-escritorio) {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "intro intro"
+      "contexto beneficios"
+      "galeria galeria";
+    gap: $espacio-bloque;
+  }
+
+  &__intro {
+    grid-area: intro;
+  }
+
+  &__contexto {
+    grid-area: contexto;
+  }
+
+  &__galeria {
+    grid-area: galeria;
+  }
+
+  &__beneficios {
+    grid-area: beneficios;
+  }
+}
+
+.grilla-servicios {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "hero"
+    "incluye"
+    "propuestas"
+    "reserva";
+  gap: $espacio-xxl;
+  width: 100%;
+
+  @include desde($bp-escritorio) {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "hero hero"
+      "incluye reserva"
+      "propuestas propuestas";
+    gap: $espacio-bloque;
+  }
+
+  &__hero {
+    grid-area: hero;
+  }
+
+  &__incluye {
+    grid-area: incluye;
+  }
+
+  &__propuestas {
+    grid-area: propuestas;
+  }
+
+  &__reserva {
+    grid-area: reserva;
+  }
+}

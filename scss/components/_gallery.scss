@@ -1,0 +1,90 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.figura {
+  display: flex;
+  flex-direction: column;
+  gap: $espacio-m;
+  padding: $espacio-xl;
+  background-color: $color-fondo;
+
+  &__imagen {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: $color-superficie;
+    border: 1px solid $color-borde;
+  }
+
+  &__leyenda {
+    color: $color-texto-suave;
+    font-size: 0.95rem;
+    font-style: italic;
+  }
+}
+
+.galeria-carousel {
+  background-color: $color-fondo;
+  border: 1px solid $color-borde;
+
+  .carousel-inner {
+    background-color: $color-superficie;
+  }
+
+  .carousel-item img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    background-color: $color-superficie;
+
+    @include desde($bp-tablet) {
+      height: 360px;
+    }
+  }
+
+  .carousel-caption {
+    background-color: $color-velo;
+    border-radius: $radio-borde-chico;
+    padding: $espacio-s $espacio-m;
+    left: 10%;
+    right: 10%;
+    bottom: $espacio-l;
+
+    p {
+      margin: 0;
+      color: $color-claro;
+      font-family: $fuente-cuerpo;
+      font-size: 0.95rem;
+    }
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 12%;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    background-color: $color-acento;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: none;
+  }
+}
+
+// Misma especificidad que el CSS anterior: sin el prefijo .galeria-carousel.
+.carousel-control-prev,
+.carousel-control-next {
+  @include transicion-interactiva;
+
+  &:hover,
+  &:focus {
+    background-color: $color-control-hover;
+  }
+
+  &:active {
+    background-color: $color-foco-suave;
+  }
+}

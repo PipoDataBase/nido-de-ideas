@@ -1,0 +1,26 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.boton {
+  align-self: flex-start;
+  padding: $espacio-xl 28px;
+  border: 0;
+  background-color: $color-acento;
+  color: $color-secundario;
+  font-family: $fuente-cuerpo;
+  font-size: 1rem;
+  font-weight: 600;
+  @include transicion-interactiva;
+
+  &:hover,
+  &:focus {
+    background-color: $color-acento-hover;
+    outline: 3px solid $color-primario;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    background-color: $color-acento-activo;
+    transform: translateY(1px);
+  }
+}

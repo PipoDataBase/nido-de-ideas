@@ -1,6 +1,15 @@
 // Único punto de entrada. El CSS publicado sale de este archivo.
+@use "utilities/variables" as *;
+@use "utilities/mixins" as *;
 @use "base/base";
 @use "base/tipografia";
 @use "layout/header";
 @use "layout/nav";
 @use "layout/footer";
+@use "components/sections";
+@use "components/grids";
+@use "components/cards";
+@use "components/buttons";
+@use "components/forms";
+@use "components/gallery";
+@use "components/accordion";

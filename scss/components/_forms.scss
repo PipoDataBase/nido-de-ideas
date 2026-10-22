@@ -1,0 +1,28 @@
+@use "../utilities/variables" as *;
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: $espacio-l;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: $espacio-s;
+}
+
+.etiqueta {
+  color: $color-secundario;
+  font-weight: 600;
+}
+
+.entrada {
+  width: 100%;
+  padding: $espacio-xl;
+  border: 1px solid $color-borde-entrada;
+  background-color: $color-superficie;
+  color: $color-texto;
+  font-family: $fuente-cuerpo;
+  font-size: 1rem;
+}

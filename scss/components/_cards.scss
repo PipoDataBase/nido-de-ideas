@@ -1,0 +1,46 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.grupo-tarjetas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $espacio-xl;
+  width: 100%;
+
+  @include desde($bp-tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include desde($bp-escritorio) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.grilla-proyectos .grupo-tarjetas {
+  @include desde($bp-escritorio) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  gap: $espacio-m;
+  width: 100%;
+  padding: $espacio-xl;
+  background-color: $color-fondo;
+  border-left: 4px solid $color-acento;
+  @include transicion-interactiva;
+
+  &:hover,
+  &:focus,
+  &:focus-within {
+    transform: translateY(-4px);
+    box-shadow: $sombra-tarjeta;
+    border-left-color: $color-primario;
+  }
+
+  &:active {
+    transform: translateY(-1px);
+  }
+}
