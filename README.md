@@ -4,9 +4,9 @@ Sitio web del taller creativo **Nido de Ideas**: cerámica, ilustración y talle
 
 ## Sitio desplegado
 
-El proyecto está publicado en GitHub Pages:
+El proyecto está publicado en Vercel:
 
-**https://pipodatabase.github.io/nido-de-ideas/**
+**https://tarea-self-one.vercel.app**
 
 ## Repositorio
 
@@ -52,7 +52,7 @@ nido-de-ideas/
 │       └── _accordion.scss
 ├── styles/
 │   └── styles.css
-└── images/
+└── assets/
 ```
 
 `styles/styles.css` no se edita a mano: es la compilación de `scss/main.scss`. Los cinco HTML siguen enlazando esa hoja y el CDN de Bootstrap.
