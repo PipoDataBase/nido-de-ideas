@@ -210,12 +210,12 @@ video {
   transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 .nav-enlace--actual {
-  color: #d4a017 !important;
-  border-bottom-color: #d4a017;
+  color: #ffe29a !important;
+  border-bottom-color: #ffe29a;
 }
 .nav-enlace:hover, .nav-enlace:focus {
-  color: #d4a017 !important;
-  border-bottom-color: #d4a017;
+  color: #ffe29a !important;
+  border-bottom-color: #ffe29a;
 }
 .nav-enlace:active {
   color: #fff !important;
@@ -518,12 +518,12 @@ video {
   transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 .boton:hover, .boton:focus {
-  background-color: #b68b12;
+  background-color: #d09d17;
   outline: 3px solid #3d6b4f;
   outline-offset: 2px;
 }
 .boton:active {
-  background-color: #9a7610;
+  background-color: #cc9a16;
   transform: translateY(1px);
 }
 
@@ -630,6 +630,7 @@ video {
 }
 .galeria-carousel .carousel-indicators [data-bs-target] {
   background-color: #d4a017;
+  border: 1px solid #2c3a32;
 }
 .galeria-carousel .carousel-control-prev-icon,
 .galeria-carousel .carousel-control-next-icon {

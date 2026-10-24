@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Inicio | Nido de Ideas</title>
+    <title>Taller de cerámica e ilustración | Nido de Ideas</title>
+    <meta name="description" content="Taller de cerámica e ilustración con clases presenciales, materiales incluidos y grupos chicos. Conocé Nido de Ideas y reservá tu lugar.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
@@ -13,17 +14,17 @@
   </head>
   <body class="pagina">
     <header class="encabezado">
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Principal">
         <div class="container-fluid px-0">
           <a class="navbar-brand marca" href="index.html">
-            <img class="logo" src="images/logo.svg" alt="Logotipo de Nido de Ideas, taller creativo">
+            <img class="logo" src="images/logo-nido-de-ideas.svg" alt="Logotipo de Nido de Ideas, taller creativo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="menuPrincipal">
             <ul class="navbar-nav ms-lg-auto">
-              <li class="nav-item"><a class="nav-link nav-enlace nav-enlace--actual" href="index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link nav-enlace nav-enlace--actual" href="index.html" aria-current="page">Inicio</a></li>
               <li class="nav-item"><a class="nav-link nav-enlace" href="pages/sobre-mi.html">Sobre mí</a></li>
               <li class="nav-item"><a class="nav-link nav-enlace" href="pages/proyectos.html">Proyectos</a></li>
               <li class="nav-item"><a class="nav-link nav-enlace" href="pages/servicios.html">Servicios</a></li>
@@ -34,106 +35,104 @@
       </nav>
     </header>
 
-    <main class="principal">
-      <div class="grilla-inicio">
-        <section class="seccion seccion--destacada grilla-inicio__hero" data-aos="fade-up">
-          <h1 class="titulo">Un taller para crear con las manos y las ideas</h1>
-          <p class="texto">
-            Nido de Ideas es un espacio de cerámica, ilustración y talleres
-            presenciales. Acá se aprende despacio, se prueba sin miedo y se
-            lleva a casa una pieza hecha por vos.
-          </p>
-        </section>
+    <main class="principal grilla-inicio">
+      <section class="seccion seccion--destacada grilla-inicio__hero" data-aos="fade-up">
+        <h1 class="titulo">Taller de cerámica e ilustración para crear con las manos</h1>
+        <p class="texto">
+          Nido de Ideas es un espacio de cerámica, ilustración y talleres
+          presenciales. Acá se aprende despacio, se prueba sin miedo y se
+          lleva a casa una pieza hecha por vos.
+        </p>
+      </section>
 
-        <section class="seccion grilla-inicio__info" data-aos="fade-up">
-          <h2 class="subtitulo">Información general</h2>
-          <p class="texto">
-            El taller está pensado para principiantes y para quienes ya vienen
-            trabajando un oficio. Las clases son en grupos chicos, con materiales
-            incluidos y seguimiento personalizado.
-          </p>
-          <p class="texto">
-            El objetivo de esta página es presentar el espacio, mostrar proyectos
-            recientes y facilitar el contacto para reservas o consultas.
-          </p>
-        </section>
+      <section class="seccion grilla-inicio__info" data-aos="fade-up">
+        <h2 class="subtitulo">Clases presenciales para principiantes</h2>
+        <p class="texto">
+          Las clases de cerámica e ilustración botánica están pensadas para
+          quien empieza y para quien ya viene trabajando un oficio. Son en
+          grupos chicos, con materiales incluidos y seguimiento personalizado.
+        </p>
+        <p class="texto">
+          Podés sumarte a una clase semanal, a un taller de un día o encargar
+          una pieza para tu casa.
+        </p>
+      </section>
 
-        <section class="seccion grilla-inicio__imagen" data-aos="fade-up">
-          <h2 class="subtitulo">Galería del taller</h2>
-          <div id="galeriaInicio" class="carousel slide galeria-carousel" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#galeriaInicio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
-              <button type="button" data-bs-target="#galeriaInicio" data-bs-slide-to="1" aria-label="Imagen 2"></button>
-              <button type="button" data-bs-target="#galeriaInicio" data-bs-slide-to="2" aria-label="Imagen 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/taller.svg" alt="Mesa de trabajo del taller con piezas, papeles y herramientas">
-                <div class="carousel-caption">
-                  <p>El rincón de trabajo, listo para una clase.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images/ceramica.svg" alt="Cuenco de cerámica artesanal sobre una mesa de taller">
-                <div class="carousel-caption">
-                  <p>Cerámica modelada a mano en el ciclo de mesa.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images/ilustracion.svg" alt="Lámina ilustrada con un tallo y dos flores amarillas">
-                <div class="carousel-caption">
-                  <p>Lámina botánica de un taller de un día.</p>
-                </div>
+      <section class="seccion grilla-inicio__imagen" data-aos="fade-up">
+        <h2 class="subtitulo">Galería de piezas y láminas</h2>
+        <div id="galeriaInicio" class="carousel slide galeria-carousel" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#galeriaInicio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Mesa de trabajo del taller"></button>
+            <button type="button" data-bs-target="#galeriaInicio" data-bs-slide-to="1" aria-label="Cuenco de cerámica artesanal"></button>
+            <button type="button" data-bs-target="#galeriaInicio" data-bs-slide-to="2" aria-label="Lámina de ilustración botánica"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/mesa-taller-ceramica.svg" alt="Mesa de trabajo del taller con piezas de cerámica, papeles y herramientas">
+              <div class="carousel-caption">
+                <p>El rincón de trabajo, listo para una clase.</p>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#galeriaInicio" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#galeriaInicio" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Siguiente</span>
-            </button>
+            <div class="carousel-item">
+              <img src="images/cuenco-ceramica-artesanal.svg" alt="Cuenco de cerámica artesanal sobre una mesa de taller">
+              <div class="carousel-caption">
+                <p>Cerámica modelada a mano en el ciclo de mesa.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/lamina-ilustracion-botanica.svg" alt="Lámina de ilustración botánica con un tallo y dos flores amarillas">
+              <div class="carousel-caption">
+                <p>Lámina botánica de un taller de un día.</p>
+              </div>
+            </div>
           </div>
-        </section>
+          <button class="carousel-control-prev" type="button" data-bs-target="#galeriaInicio" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#galeriaInicio" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
 
-        <section class="seccion grilla-inicio__oficios" data-aos="fade-up">
-          <h2 class="subtitulo">Qué vas a encontrar en el taller</h2>
-          <ul class="lista">
-            <li class="lista__item">Clases de cerámica para empezar desde cero.</li>
-            <li class="lista__item">Encuentros de ilustración botánica y dibujo observado.</li>
-            <li class="lista__item">Talleres de un día para regalar o para probar un oficio.</li>
-            <li class="lista__item">Encargos de piezas únicas para el hogar.</li>
-          </ul>
-        </section>
+      <section class="seccion grilla-inicio__oficios" data-aos="fade-up">
+        <h2 class="subtitulo">Cerámica, ilustración y encargos</h2>
+        <ul class="lista">
+          <li class="lista__item">Clases de cerámica para empezar desde cero.</li>
+          <li class="lista__item">Encuentros de ilustración botánica y dibujo observado.</li>
+          <li class="lista__item">Talleres de un día para regalar o para probar un oficio.</li>
+          <li class="lista__item">Encargos de piezas únicas para el hogar.</li>
+        </ul>
+      </section>
 
-        <section class="seccion grilla-inicio__propuestas" data-aos="fade-up">
-          <h2 class="subtitulo">Propuestas destacadas</h2>
-          <div class="grupo-tarjetas">
-            <article class="tarjeta" tabindex="0" data-aos="fade-up">
-              <h3 class="titulo-tercero">Cerámica lenta</h3>
-              <p class="texto">Modelado a mano, esmaltes y una pieza para llevar. Ideal si nunca tocaste el barro.</p>
-            </article>
-            <article class="tarjeta" tabindex="0" data-aos="fade-up">
-              <h3 class="titulo-tercero">Ilustración de planta</h3>
-              <p class="texto">Observamos una planta real y armamos una lámina. No hace falta saber dibujar.</p>
-            </article>
-            <article class="tarjeta" tabindex="0" data-aos="fade-up">
-              <h3 class="titulo-tercero">Taller abierto</h3>
-              <p class="texto">Un sábado al mes el espacio se abre para quien quiera continuar un proyecto propio.</p>
-            </article>
-          </div>
-        </section>
-      </div>
+      <section class="seccion grilla-inicio__propuestas" data-aos="fade-up">
+        <h2 class="subtitulo">Propuestas destacadas del taller</h2>
+        <div class="grupo-tarjetas">
+          <article class="tarjeta" tabindex="0" data-aos="fade-up">
+            <h3 class="titulo-tercero">Cerámica lenta</h3>
+            <p class="texto">Modelado a mano, esmaltes y una pieza para llevar. Ideal si nunca tocaste el barro.</p>
+          </article>
+          <article class="tarjeta" tabindex="0" data-aos="fade-up">
+            <h3 class="titulo-tercero">Ilustración de planta</h3>
+            <p class="texto">Observamos una planta real y armamos una lámina. No hace falta saber dibujar.</p>
+          </article>
+          <article class="tarjeta" tabindex="0" data-aos="fade-up">
+            <h3 class="titulo-tercero">Taller abierto</h3>
+            <p class="texto">Un sábado al mes el espacio se abre para quien quiera continuar un proyecto propio.</p>
+          </article>
+        </div>
+      </section>
     </main>
 
     <footer class="pie">
       <p class="pie__texto">© 2026 Nido de Ideas. Todos los derechos reservados.</p>
       <p class="pie__texto">Redes sociales</p>
       <ul class="pie-lista">
-        <li><a class="pie-enlace" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        <li><a class="pie-enlace" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-        <li><a class="pie-enlace" href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+        <li><a class="pie-enlace" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
+        <li><a class="pie-enlace" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
+        <li><a class="pie-enlace" href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">Pinterest<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
       </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contacto | Nido de Ideas</title>
+    <title>Reservas y contacto del taller | Nido de Ideas</title>
+    <meta name="description" content="Reservá una clase de cerámica o ilustración en Nido de Ideas. Escribí por el formulario para encargos, visitas y consultas de lunes a sábado.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
@@ -13,10 +14,10 @@
   </head>
   <body class="pagina">
     <header class="encabezado">
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Principal">
         <div class="container-fluid px-0">
           <a class="navbar-brand marca" href="../index.html">
-            <img class="logo" src="../images/logo.svg" alt="Logotipo de Nido de Ideas, taller creativo">
+            <img class="logo" src="../images/logo-nido-de-ideas.svg" alt="Logotipo de Nido de Ideas, taller creativo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
             <span class="navbar-toggler-icon"></span>
@@ -27,7 +28,7 @@
               <li class="nav-item"><a class="nav-link nav-enlace" href="sobre-mi.html">Sobre mí</a></li>
               <li class="nav-item"><a class="nav-link nav-enlace" href="proyectos.html">Proyectos</a></li>
               <li class="nav-item"><a class="nav-link nav-enlace" href="servicios.html">Servicios</a></li>
-              <li class="nav-item"><a class="nav-link nav-enlace nav-enlace--actual" href="contacto.html">Contacto</a></li>
+              <li class="nav-item"><a class="nav-link nav-enlace nav-enlace--actual" href="contacto.html" aria-current="page">Contacto</a></li>
             </ul>
           </div>
         </div>
@@ -35,18 +36,18 @@
     </header>
     <main class="principal grilla-simple">
       <section class="seccion seccion--destacada grilla-simple__hero" data-aos="fade-up">
-        <h1 class="titulo">Contacto</h1>
+        <h1 class="titulo">Contacto para reservar una clase</h1>
         <p class="texto">
-          Escribinos para reservar una clase, consultar un encargo o pedir
-          más información sobre el taller. Respondemos en el día, de lunes a
-          sábado.
+          Escribinos para reservar una clase de cerámica o ilustración,
+          consultar un encargo o pedir más información sobre el taller.
+          Respondemos en el día, de lunes a sábado.
         </p>
       </section>
       <section class="seccion grilla-simple__cuerpo" data-aos="fade-up">
-        <h2 class="subtitulo">Datos del taller</h2>
+        <h2 class="subtitulo">Datos del taller Nido de Ideas</h2>
         <p class="texto">
-          Nido de Ideas atiende consultas por correo y redes. Esta página
-          reúne los canales principales para coordinar una visita o una clase.
+          Atendemos consultas por correo y redes. Desde acá coordinás una
+          visita, una clase presencial o la reserva de tu lugar.
         </p>
         <ul class="lista">
           <li class="lista__item">Correo: hola@nidodeideas.example</li>
@@ -54,35 +55,35 @@
           <li class="lista__item">Modalidad: talleres presenciales con reserva previa</li>
         </ul>
         <figure class="figura" data-aos="zoom-in">
-          <img class="figura__imagen" src="../images/contacto.svg" alt="Sobre cerrado y lápiz para enviar un mensaje al taller">
+          <img class="figura__imagen" src="../images/mensaje-contacto-taller.svg" alt="Sobre cerrado y lápiz para enviar un mensaje al taller Nido de Ideas">
           <figcaption class="figura__leyenda">Podés escribir por correo o dejar un mensaje en el formulario.</figcaption>
         </figure>
       </section>
       <section class="seccion grilla-simple__complemento" data-aos="fade-up">
-        <h2 class="subtitulo">Escribinos</h2>
+        <h2 class="subtitulo">Formulario para clases y encargos</h2>
         <article class="tarjeta" tabindex="0" data-aos="fade-up">
-          <h3 class="titulo-tercero">Formulario de consulta</h3>
+          <h3 class="titulo-tercero">Consulta sobre el taller</h3>
           <p class="texto">
-            Completá tus datos y contanos qué taller te interesa. Este
-            formulario es la estructura de contacto del sitio; el envío se
-            conectará más adelante.
+            Completá tus datos y contanos qué clase te interesa: cerámica,
+            ilustración botánica o un taller de un día. El envío del formulario
+            se conectará más adelante.
           </p>
           <form class="formulario" action="#" method="post">
-            <p class="campo">
+            <div class="campo">
               <label class="etiqueta" for="nombre">Nombre</label>
-              <input class="entrada" type="text" id="nombre" name="nombre" required>
-            </p>
-            <p class="campo">
+              <input class="entrada" type="text" id="nombre" name="nombre" autocomplete="name" required>
+            </div>
+            <div class="campo">
               <label class="etiqueta" for="correo">Correo electrónico</label>
-              <input class="entrada" type="email" id="correo" name="correo" required>
-            </p>
-            <p class="campo">
+              <input class="entrada" type="email" id="correo" name="correo" autocomplete="email" required>
+            </div>
+            <div class="campo">
               <label class="etiqueta" for="mensaje">Mensaje</label>
               <textarea class="entrada" id="mensaje" name="mensaje" rows="5" required></textarea>
-            </p>
-            <p class="campo">
+            </div>
+            <div class="campo">
               <button class="boton" type="submit">Enviar consulta</button>
-            </p>
+            </div>
           </form>
         </article>
       </section>
@@ -91,9 +92,9 @@
       <p class="pie__texto">© 2026 Nido de Ideas. Todos los derechos reservados.</p>
       <p class="pie__texto">Redes sociales</p>
       <ul class="pie-lista">
-        <li><a class="pie-enlace" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        <li><a class="pie-enlace" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-        <li><a class="pie-enlace" href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+        <li><a class="pie-enlace" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
+        <li><a class="pie-enlace" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
+        <li><a class="pie-enlace" href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">Pinterest<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
       </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

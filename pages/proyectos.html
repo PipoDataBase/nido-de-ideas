@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Proyectos | Nido de Ideas</title>
+    <title>Proyectos de cerámica y láminas botánicas | Nido de Ideas</title>
+    <meta name="description" content="Proyectos de cerámica y láminas botánicas de Nido de Ideas: cuencos, jarras y dibujo observado, hechos en talleres presenciales de grupos chicos.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
@@ -13,10 +14,10 @@
   </head>
   <body class="pagina">
     <header class="encabezado">
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Principal">
         <div class="container-fluid px-0">
           <a class="navbar-brand marca" href="../index.html">
-            <img class="logo" src="../images/logo.svg" alt="Logotipo de Nido de Ideas, taller creativo">
+            <img class="logo" src="../images/logo-nido-de-ideas.svg" alt="Logotipo de Nido de Ideas, taller creativo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
             <span class="navbar-toggler-icon"></span>
@@ -25,7 +26,7 @@
             <ul class="navbar-nav ms-lg-auto">
               <li class="nav-item"><a class="nav-link nav-enlace" href="../index.html">Inicio</a></li>
               <li class="nav-item"><a class="nav-link nav-enlace" href="sobre-mi.html">Sobre mí</a></li>
-              <li class="nav-item"><a class="nav-link nav-enlace nav-enlace--actual" href="proyectos.html">Proyectos</a></li>
+              <li class="nav-item"><a class="nav-link nav-enlace nav-enlace--actual" href="proyectos.html" aria-current="page">Proyectos</a></li>
               <li class="nav-item"><a class="nav-link nav-enlace" href="servicios.html">Servicios</a></li>
               <li class="nav-item"><a class="nav-link nav-enlace" href="contacto.html">Contacto</a></li>
             </ul>
@@ -34,92 +35,90 @@
       </nav>
     </header>
 
-    <main class="principal">
-      <div class="grilla-proyectos">
-        <section class="seccion seccion--destacada grilla-proyectos__intro" data-aos="fade-up">
-          <h1 class="titulo">Proyectos del taller</h1>
-          <p class="texto">
-            Esta página reúne piezas, láminas y experiencias de clase. Cada
-            proyecto muestra un oficio distinto y el resultado de trabajar en grupo.
-          </p>
-        </section>
+    <main class="principal grilla-proyectos">
+      <section class="seccion seccion--destacada grilla-proyectos__intro" data-aos="fade-up">
+        <h1 class="titulo">Proyectos de cerámica e ilustración botánica</h1>
+        <p class="texto">
+          Esta página reúne piezas, láminas y experiencias de clase. Cada
+          proyecto muestra un oficio distinto y el resultado de trabajar en grupo.
+        </p>
+      </section>
 
-        <section class="seccion grilla-proyectos__contexto" data-aos="fade-up">
-          <h2 class="subtitulo">Selección reciente</h2>
-          <p class="texto">
-            Elegí dos líneas que se repiten en el taller: objetos de cerámica
-            para el día a día e ilustración de plantas nativas.
-          </p>
-        </section>
+      <section class="seccion grilla-proyectos__contexto" data-aos="fade-up">
+        <h2 class="subtitulo">Cuencos, jarras y láminas recientes</h2>
+        <p class="texto">
+          Elegí dos líneas que se repiten en el taller: objetos de cerámica
+          para el día a día e ilustración de plantas nativas.
+        </p>
+      </section>
 
-        <section class="seccion grilla-proyectos__galeria" data-aos="fade-up">
-          <h2 class="subtitulo">Galería de proyectos</h2>
-          <div id="galeriaProyectos" class="carousel slide galeria-carousel" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#galeriaProyectos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
-              <button type="button" data-bs-target="#galeriaProyectos" data-bs-slide-to="1" aria-label="Imagen 2"></button>
-              <button type="button" data-bs-target="#galeriaProyectos" data-bs-slide-to="2" aria-label="Imagen 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../images/ceramica.svg" alt="Cuenco de cerámica artesanal sobre una mesa de taller">
-                <div class="carousel-caption">
-                  <p>Cuencos y jarras del ciclo de mesa.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="../images/ilustracion.svg" alt="Lámina ilustrada con un tallo y dos flores amarillas">
-                <div class="carousel-caption">
-                  <p>Láminas de patio, listas para enmarcar.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="../images/taller.svg" alt="Mesa de trabajo del taller con piezas, papeles y herramientas">
-                <div class="carousel-caption">
-                  <p>El espacio compartido durante las clases.</p>
-                </div>
+      <section class="seccion grilla-proyectos__galeria" data-aos="fade-up">
+        <h2 class="subtitulo">Galería de proyectos del taller</h2>
+        <div id="galeriaProyectos" class="carousel slide galeria-carousel" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#galeriaProyectos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Cuencos y jarras de cerámica"></button>
+            <button type="button" data-bs-target="#galeriaProyectos" data-bs-slide-to="1" aria-label="Láminas botánicas"></button>
+            <button type="button" data-bs-target="#galeriaProyectos" data-bs-slide-to="2" aria-label="Mesa del taller durante la clase"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../images/cuenco-ceramica-artesanal.svg" alt="Cuenco de cerámica artesanal sobre una mesa de taller">
+              <div class="carousel-caption">
+                <p>Cuencos y jarras del ciclo de mesa.</p>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#galeriaProyectos" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#galeriaProyectos" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Siguiente</span>
-            </button>
+            <div class="carousel-item">
+              <img src="../images/lamina-ilustracion-botanica.svg" alt="Lámina de ilustración botánica con un tallo y dos flores amarillas">
+              <div class="carousel-caption">
+                <p>Láminas de patio, listas para enmarcar.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../images/mesa-taller-ceramica.svg" alt="Mesa de trabajo del taller con piezas de cerámica, papeles y herramientas">
+              <div class="carousel-caption">
+                <p>El espacio compartido durante las clases.</p>
+              </div>
+            </div>
           </div>
-          <div class="grupo-tarjetas">
-            <article class="tarjeta" tabindex="0" data-aos="fade-up">
-              <h3 class="titulo-tercero">Cuencos y jarras</h3>
-              <p class="texto">Un ciclo de cuatro encuentros para modelar un set de cubiertos de mesa: cuencos, una jarra y platos pequeños.</p>
-            </article>
-            <article class="tarjeta" tabindex="0" data-aos="fade-up">
-              <h3 class="titulo-tercero">Láminas de patio</h3>
-              <p class="texto">Observamos plantas reales, armamos una composición y terminamos una lámina lista para enmarcar.</p>
-            </article>
-          </div>
-        </section>
+          <button class="carousel-control-prev" type="button" data-bs-target="#galeriaProyectos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#galeriaProyectos" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+        <div class="grupo-tarjetas">
+          <article class="tarjeta" tabindex="0" data-aos="fade-up">
+            <h3 class="titulo-tercero">Cuencos y jarras</h3>
+            <p class="texto">Un ciclo de cuatro encuentros para modelar un set de mesa: cuencos, una jarra y platos pequeños de cerámica.</p>
+          </article>
+          <article class="tarjeta" tabindex="0" data-aos="fade-up">
+            <h3 class="titulo-tercero">Láminas de patio</h3>
+            <p class="texto">Observamos plantas reales, armamos una composición y terminamos una lámina botánica lista para enmarcar.</p>
+          </article>
+        </div>
+      </section>
 
-        <section class="seccion grilla-proyectos__beneficios" data-aos="fade-up">
-          <h2 class="subtitulo">Beneficios de participar</h2>
-          <ul class="lista">
-            <li class="lista__item">Salís con una pieza terminada o en proceso claro.</li>
-            <li class="lista__item">Aprendés técnicas que después podés repetir en casa.</li>
-            <li class="lista__item">Trabajás en un grupo chico, con tiempo para preguntas.</li>
-            <li class="lista__item">Podés continuar el proyecto en el taller abierto.</li>
-          </ul>
-        </section>
-      </div>
+      <section class="seccion grilla-proyectos__beneficios" data-aos="fade-up">
+        <h2 class="subtitulo">Beneficios de los talleres presenciales</h2>
+        <ul class="lista">
+          <li class="lista__item">Salís con una pieza terminada o en proceso claro.</li>
+          <li class="lista__item">Aprendés técnicas que después podés repetir en casa.</li>
+          <li class="lista__item">Trabajás en un grupo chico, con tiempo para preguntas.</li>
+          <li class="lista__item">Podés continuar el proyecto en el taller abierto.</li>
+        </ul>
+      </section>
     </main>
 
     <footer class="pie">
       <p class="pie__texto">© 2026 Nido de Ideas. Todos los derechos reservados.</p>
       <p class="pie__texto">Redes sociales</p>
       <ul class="pie-lista">
-        <li><a class="pie-enlace" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        <li><a class="pie-enlace" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-        <li><a class="pie-enlace" href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+        <li><a class="pie-enlace" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
+        <li><a class="pie-enlace" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
+        <li><a class="pie-enlace" href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">Pinterest<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
       </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

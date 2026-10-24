@@ -5,6 +5,8 @@
 $color-primario: #3d6b4f;
 $color-secundario: #2c3a32;
 $color-acento: #d4a017;
+// El mostaza no llega a 4.5:1 sobre el verde del encabezado.
+$color-acento-sobre-verde: #ffe29a;
 $color-fondo: #f4efe4;
 $color-superficie: #fffdf8;
 $color-texto: #2c3a32;
@@ -14,8 +16,9 @@ $color-blanco: #fff;
 $color-punto: #e6ddcc;
 $color-borde: #e2d8c4;
 $color-borde-entrada: #cfc3ad;
-$color-acento-hover: #b68b12;
-$color-acento-activo: #9a7610;
+// El texto oscuro del botón sigue por encima de 4.5:1 en estos fondos.
+$color-acento-hover: #d09d17;
+$color-acento-activo: #cc9a16;
 $color-acordeon-activo: #e8dfd0;
 
 $color-sombra: rgba(44, 58, 50, 0.14);

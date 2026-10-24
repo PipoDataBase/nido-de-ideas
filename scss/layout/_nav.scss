@@ -47,14 +47,14 @@
   @include transicion-interactiva;
 
   &--actual {
-    color: $color-acento !important;
-    border-bottom-color: $color-acento;
+    color: $color-acento-sobre-verde !important;
+    border-bottom-color: $color-acento-sobre-verde;
   }
 
   &:hover,
   &:focus {
-    color: $color-acento !important;
-    border-bottom-color: $color-acento;
+    color: $color-acento-sobre-verde !important;
+    border-bottom-color: $color-acento-sobre-verde;
   }
 
   &:active {
